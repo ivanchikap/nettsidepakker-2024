@@ -1,0 +1,22 @@
+.header {
+  min-height: 80vh;
+
+  &__top {
+    position: relative;
+    z-index: 4;
+    background-color: $white;
+    padding: 0.5rem;
+    min-height: 4rem;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px 20px;
+  }
+}
