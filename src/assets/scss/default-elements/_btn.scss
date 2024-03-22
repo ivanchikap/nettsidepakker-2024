@@ -1,14 +1,31 @@
 .btn {
   font-family: $poppins;
   font-weight: 500;
+  font-size: 20px;
   display: inline-block;
-  padding: 8px 20px;
-  border-radius: 6px;
+  padding: 12px 20px;
+  border-radius: 8px;
   border: 2px solid $green;
   transition: all .2s linear;
   color: $white;
   background-color: $green;
   box-shadow: -3px 3px 4px rgba($green, .2);
+
+  &::before {
+    font-family: "Font Awesome 5 Free";
+    color: inherit;
+    margin-right: 10px;
+  }
+
+  &--phone::before {
+    content: "\f879";
+    font-weight: 900;
+  }
+
+  &--service::before {
+    content: "\f06e";
+    font-weight: 400;
+  }
 
   &:hover {
     color: $green;

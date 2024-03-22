@@ -53,3 +53,21 @@ footer {
     z-index: 3;
   }
 }
+
+h1 {
+  font-size: 48px;
+  line-height: 1.4;
+  font-family: $poppins;
+  span {
+    color: $blue;
+  }
+}
+h2 {
+  font-size: 28px;
+}
+.link-decor-on-hover {
+  transition: all .3s linear;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}

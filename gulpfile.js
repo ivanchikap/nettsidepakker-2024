@@ -35,7 +35,7 @@ const path = {
         html:   srcPath + "*.html",
         js:     srcPath + "assets/js/*.js",
         css:    srcPath + "assets/scss/*.scss",
-        images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
+        images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json,mp4}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
         plugins:  srcPath + "assets/plugins/**/*.*"
     },
@@ -43,7 +43,7 @@ const path = {
         html:   srcPath + "**/*.html",
         js:     srcPath + "assets/js/**/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
-        images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
+        images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json,mp4}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
         plugins:  srcPath + "assets/plugins/**/*.*"
     },

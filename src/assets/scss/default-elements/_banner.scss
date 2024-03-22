@@ -1,5 +1,38 @@
 .banner {
-  padding: 100px 0;
+  display: flex;
   min-height: 100%;
-  //background: linear-gradient(to right, $blue, $blue 20%, transparent 20%, transparent 100%);
+
+  h1 {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 40%;
+    padding: 40px 20px 40px 80px;
+  }
+
+  &__info-text {
+    margin-bottom: 20px;
+
+    > p, ul, li {
+      margin-top: 8px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px 20px;
+    margin-top: 20px;
+  }
+
+  &__video {
+    display: flex;
+    width: 60%;
+  }
 }
