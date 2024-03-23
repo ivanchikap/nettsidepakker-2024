@@ -13,234 +13,278 @@
     <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+          rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+    <link
+            href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+            rel="stylesheet"
+    />
     
     <title>Main</title>
 </head>
 <body class="">
-        <!-- Header -->
-        <header class="header">
-            <div class="header__top">
-                <div class="container">
-                    <button class="burger" id="burger">
-                        <span>open navigation</span>
-                    </button>
-                    <a href="#" class="logo">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </a>
-                    <!-- /logo-->
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#">Main</a>
-                                <!--<div class="nav__dropdown">-->
-                                <!--    <a class="nav__dropdown-item" href="#">Our Services</a>-->
-                                <!--    <a class="nav__dropdown-item" href="#">Review</a>-->
-                                <!--</div>-->
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">About Us</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Services</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Templates</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Tips</a>
+<!-- Header -->
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <button class="burger" id="burger">
+                <span>open navigation</span>
+            </button>
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <!-- /logo-->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">Main</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Templates</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Tips</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /nav-->
+        </div>
+    </div>
+    <!--/header__top-->
+    <section class="banner">
+        <div class="banner__info">
+            <h1><span>Hello, </span>some slogan! </h1>
+            <div class="banner__info-text">
+                <h3>Our best proposal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
+                    expedita natus nisi soluta veritatis voluptatibus. Dignissimos dolorem dolores et eum perspiciatis
+                    provident rerum vel veritatis.</p>
+            </div>
+            <div class="banner__info-text">
+                <h3>Contacts</h3>
+                <ul class="contacts">
+                    <li>
+                        <a class="contacts__item" href="https://www.google.com/maps/place/%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D0%B3%D0%B8%D1%8F/@63.2493455,5.6676001,5z/data=!4m6!3m5!1s0x461268458f4de5bf:0xa1b03b9db864d02b!8m2!3d60.472024!4d8.468946!16zL20vMDViNHc?entry=ttu">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Fiktivt Tømrerselskap AS, Storebruvegen 46, 2938 Bagn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contacts__item" href="tel:999 21 722">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>999 21 722</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contacts__item" href="mailto:some@email.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>some@email.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner__video">
+            <video
+                    id="my-video"
+                    class="video-js vjs-theme-forest banner__video-player"
+                    controls
+                    muted
+                    preload="auto"
+                    poster="assets/images/pic1.jpg"
+                    data-setup="{}"
+            >
+                <source src="assets/images/nature.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                    >
+                </p>
+            </video>
+        </div>
+    </section>
+    <!--/banner-->
+    
+    
+    
+    
+    
+    
+</header>
+
+<aside class="sidebar" id="sidebar">
+    <nav class="nav nav--sidebar">
+        <a class="nav__item" href="#about">
+            <span>Main</span>
+        </a>
+        <a class="nav__item" href="#services">
+            <span>About Us</span>
+        </a>
+        <a class="nav__item" href="#portfolio-sec">
+            <span>Services</span>
+        </a>
+        <a class="nav__item" href="#testimonial">
+            <span>Templates</span>
+        </a>
+        <a class="nav__item" href="#contact-us">
+            <span>Tips</span>
+        </a>
+    </nav>
+</aside>
+<!-- Main -->
+<main class="main">
+    
+    <section class="section website">
+        <div class="container">
+            <h2>Website development</h2>
+            <p>Section under there: Get a unique website with us from a low monthly price by using our templates with everything included. Insert slider between 2 different templates and button with «see more templates» and shop website now. Go to templates to see prices. </p>
+        </div>
+    </section>
+    <!--/website-->
+    <section class="section services">
+        <div class="container">
+            <h2>Services</h2>
+            <p>Section under there: Want a unique design or help with advertising? Check out our other services such as SEO, SEM, Ecommerce, Google Adwords, banner ads, online ads, SOME ads and content production. Go to services to see prices.</p>
+        </div>
+    </section>
+    <!--/website-->
+    
+    <section class="section who">
+        <div class="container">
+            <h2>Who we are?!</h2>
+            <p>There will be an image with blue gradient on it with one or two sentences amd link button to about us page</p>
+            <p>Who are we short paragraph with buttons that leads to about us</p>
+        </div>
+    </section>
+    <!--/who-->
+    
+    <section class="section talk">
+        <div class="container">
+            <h2>Want to talk to us more?</h2>
+            <form class="form">
+                <label class="form__label">
+                    <span class="form__label-text">Enter your full name:</span>
+                    <input name="fullname" class="form__input" type="text" placeholder="John Smith">
+                </label>
+                <label class="form__label">
+                    <span class="form__label-text">Put in your email:</span>
+                    <input name="email" class="form__input" type="text" placeholder="someemail@gmail.com">
+                </label>
+                <label class="form__label">
+                    <span class="form__label-text">Enter your Subject:</span>
+                    <input class="form__input" name="subject" type="text" placeholder="some subject">
+                </label>
+                <label class="form__label">
+                    <span class="form__label-text">Enter your Message:</span>
+                    <textarea  class="form__input form__input--textarea" placeholder="some message" name="message"></textarea>
+                </label>
+    
+                <button class="btn btn--invert btn--small btn--plane" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!--/who-->
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-4">
+                    <h4 class="footer__title">About company</h4>
+                    <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, natus, pariatur! Accusamus atque est, facere illo magnam magni odit praesentium saepe sunt voluptatem! Dolor laboriosam nostrum nulla sit? Dolorem, sapiente?</p>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title&#45;&#45;join">Contacts</h4>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-item footer__contacts-item--address">
+                            <a class="footer__contact link-decor-on-hover" href="#">Fiktivt Tømrerselskap AS, Storebruvegen 46, 2938 Bagn</a>
+                        </li>
+                        <li class="footer__contacts-item footer__contacts-item--tel">
+                            <a class="footer__contact link-decor-on-hover" href="tel: +999 21 722">999 21 722</a>
+                        </li>
+                        <li class="footer__contacts-item  footer__contacts-item--mail">
+                            <a class="footer__contact link-decor-on-hover" href="mailto:some@email.com">some@email.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title--help">Services</h4>
+                    <ul class="footer__default-list">
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#business">SEO</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#private">SEM</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#apartment">Google Ads</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#village">Google Business Profile</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title--follow">Follow Us</h4>
+                    <ul class="footer__socials-list">
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--facebook" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__shedule">
+                        <h5 class="footer__shedule-title">
+                            Work schedule
+                        </h5>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
+                                <span class="footer__contact">Mon-Fri: 09:00 - 18:00,<br> Sat-Sun. - day off</span>
                             </li>
                         </ul>
-                    </nav>
-                    <!-- /nav-->
-                </div>
-            </div>
-            <!--/header__top-->
-            <section class="banner">
-                <div class="banner__info">
-                    <h1><span>Hello, </span>some slogan! </h1>
-                    <div class="banner__info-text">
-                        <h2>Our best proposal</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
-                            expedita natus nisi soluta veritatis voluptatibus. Dignissimos dolorem dolores et eum perspiciatis
-                            provident rerum vel veritatis.</p>
-                    </div>
-                    <div class="banner__info-text">
-                        <h2>Contacts</h2>
-                        <ul class="contacts">
-                            <li>
-                                <a class="contacts__item" href="https://www.google.com/maps/place/%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D0%B3%D0%B8%D1%8F/@63.2493455,5.6676001,5z/data=!4m6!3m5!1s0x461268458f4de5bf:0xa1b03b9db864d02b!8m2!3d60.472024!4d8.468946!16zL20vMDViNHc?entry=ttu">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Fiktivt Tømrerselskap AS, Storebruvegen 46, 2938 Bagn</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="contacts__item" href="tel:999 21 722">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <span>999 21 722</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="contacts__item" href="mailto:some@email.com">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>some@email.com</span>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                <div class="banner__video">
-                    <img src="assets/images/pic1.jpg" alt="video">
-                </div>
-            </section>
-            <!--/banner-->
-            
-            
-            
-            
-            
-            
-        </header>
-
-        <aside class="sidebar" id="sidebar">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem eos ex laudantium, nemo tenetur voluptatem. Asperiores beatae cum cupiditate delectus, deserunt exercitationem facere iure natus omnis ratione reprehenderit voluptate.</p>
-        </aside>
-        <!-- Main -->
-        <main class="main">
-            
-            <section class="section website">
-                <div class="container">
-                    <h2>Website development</h2>
-                    <p>Section under there: Get a unique website with us from a low monthly price by using our templates with everything included. Insert slider between 2 different templates and button with «see more templates» and shop website now. Go to templates to see prices. </p>
-                </div>
-            </section>
-            <!--/website-->
-            <section class="section services">
-                <div class="container">
-                    <h2>Services</h2>
-                    <p>Section under there: Want a unique design or help with advertising? Check out our other services such as SEO, SEM, Ecommerce, Google Adwords, banner ads, online ads, SOME ads and content production. Go to services to see prices.</p>
-                </div>
-            </section>
-            <!--/website-->
-            
-            <section class="section who">
-                <div class="container">
-                    <h2>Who we are?!</h2>
-                    <p>There will be an image with blue gradient on it with one or two sentences amd link button to about us page</p>
-                    <p>Who are we short paragraph with buttons that leads to about us</p>
-                </div>
-            </section>
-            <!--/who-->
-            
-            <section class="section talk">
-                <div class="container">
-                    <h2>Want to talk to us more?</h2>
-                    <form>
-                        <label>
-                            <span>Name:</span>
-                            <input type="text" placeholder="Anton">
-                        </label>
-                        <label>
-                            <span>Email:</span>
-                            <input type="email" placeholder="some@email.com">
-                        </label>
-                        <label>
-                            <span>Your message:</span>
-                            <textarea name="message" placeholder="some message"></textarea>
-                        </label>
-                        <button class="btn">Send</button>
-                    </form>
-                </div>
-            </section>
-            <!--/who-->
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer__main">
-                <div class="container">
-                    <div class="footer__row">
-                        <div class="footer__col-4">
-                            <h4 class="footer__title">About company</h4>
-                            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, natus, pariatur! Accusamus atque est, facere illo magnam magni odit praesentium saepe sunt voluptatem! Dolor laboriosam nostrum nulla sit? Dolorem, sapiente?</p>
-                        </div>
-                        <!-- / footer__col-4 -->
-                        <div class="footer__col-4">
-                            <h4 class="footer__title footer__title&#45;&#45;join">Contacts</h4>
-                            <ul class="footer__contacts-list">
-                                <li class="footer__contacts-item footer__contacts-item--address">
-                                    <a class="footer__contact link-decor-on-hover" href="#">Fiktivt Tømrerselskap AS, Storebruvegen 46, 2938 Bagn</a>
-                                </li>
-                                <li class="footer__contacts-item footer__contacts-item--tel">
-                                    <a class="footer__contact link-decor-on-hover" href="tel: +999 21 722">999 21 722</a>
-                                </li>
-                                <li class="footer__contacts-item  footer__contacts-item--mail">
-                                    <a class="footer__contact link-decor-on-hover" href="mailto:some@email.com">some@email.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- / footer__col-4 -->
-                        <div class="footer__col-4">
-                            <h4 class="footer__title footer__title--help">Services</h4>
-                            <ul class="footer__default-list">
-                                <li class="footer__default-item">
-                                    <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#business">SEO</a>
-                                </li>
-                                <li class="footer__default-item">
-                                    <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#private">SEM</a>
-                                </li>
-                                <li class="footer__default-item">
-                                    <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#apartment">Google Ads</a>
-                                </li>
-                                <li class="footer__default-item">
-                                    <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#village">Google Business Profile</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- / footer__col-4 -->
-                        <div class="footer__col-4">
-                            <h4 class="footer__title footer__title--follow">Follow Us</h4>
-                            <ul class="footer__socials-list">
-                                <li class="footer__social-item">
-                                    <a target="_blank" class="footer__social-contact footer__social-contact--facebook" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="footer__social-item">
-                                    <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
-                                        <i class="fab fa-instagram-square"></i>
-                                    </a>
-                                </li>
-                                <li class="footer__social-item">
-                                    <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="footer__shedule">
-                                <h5 class="footer__shedule-title">
-                                    Work schedule
-                                </h5>
-                                <ul class="footer__contacts-list">
-                                    <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
-                                        <span class="footer__contact">Mon-Fri: 09:00 - 18:00,<br> Sat-Sun. - day off</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- / footer__col-4 -->
-                    </div>
-                </div>
+                <!-- / footer__col-4 -->
             </div>
-            <div class="footer__copyright">
-                <div class="container">
-                    <span>© 2024 Digital marketing company <a class="link" href="#">Nettsidepakker</a>. Some slogan can be here!</span>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="container">
+            <span>© 2024 Digital marketing company <a class="link" href="#">Nettsidepakker</a>. Some slogan can be here!</span>
+        </div>
+    </div>
+</footer>
+<div class="to-top" id="to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M256 504c137 0 248-111 248-248S393 8 256 8 8 119 8 256s111 248 248 248zm0-448c110.5 0 200 89.5 200 200s-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56zm20 328h-40c-6.6 0-12-5.4-12-12V256h-67c-10.7 0-16-12.9-8.5-20.5l99-99c4.7-4.7 12.3-4.7 17 0l99 99c7.6 7.6 2.2 20.5-8.5 20.5h-67v116c0 6.6-5.4 12-12 12z"></path></svg>
+</div>
+<div class="page-mask" id="pageMask"></div>
 
-        <div class="page-mask" id="pageMask"></div>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 
-    <script src="assets/js/app.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

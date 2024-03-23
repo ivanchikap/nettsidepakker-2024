@@ -11,6 +11,11 @@
   background-color: $green;
   box-shadow: -3px 3px 4px rgba($green, .2);
 
+  &--small {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+
   &::before {
     font-family: "Font Awesome 5 Free";
     color: inherit;
@@ -22,21 +27,26 @@
     font-weight: 900;
   }
 
+  &--plane::before {
+    content: "\f1d8";
+    font-weight: 400;
+  }
+
   &--service::before {
     content: "\f06e";
     font-weight: 400;
   }
 
   &:hover {
-    color: $green;
-    border-color: $green;
+    color: $black;
+    border-color: $black;
     background-color: transparent;
     box-shadow: none;
   }
 
   &--invert {
-    color: $green;
-    border-color: $green;
+    color: $black;
+    border-color: $black;
     background-color: transparent;
     box-shadow: none;
 
@@ -44,6 +54,7 @@
       color: $white;
       background-color: $green;
       box-shadow: -3px 3px 4px rgba($green, .2);
+      border-color: $green;
     }
   }
 }

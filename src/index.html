@@ -30,20 +30,25 @@ title: Main
 <section class="section talk">
     <div class="container">
         <h2>Want to talk to us more?</h2>
-        <form>
-            <label>
-                <span>Name:</span>
-                <input type="text" placeholder="Anton">
+        <form class="form">
+            <label class="form__label">
+                <span class="form__label-text">Enter your full name:</span>
+                <input name="fullname" class="form__input" type="text" placeholder="John Smith">
             </label>
-            <label>
-                <span>Email:</span>
-                <input type="email" placeholder="some@email.com">
+            <label class="form__label">
+                <span class="form__label-text">Put in your email:</span>
+                <input name="email" class="form__input" type="text" placeholder="someemail@gmail.com">
             </label>
-            <label>
-                <span>Your message:</span>
-                <textarea name="message" placeholder="some message"></textarea>
+            <label class="form__label">
+                <span class="form__label-text">Enter your Subject:</span>
+                <input class="form__input" name="subject" type="text" placeholder="some subject">
             </label>
-            <button class="btn">Send</button>
+            <label class="form__label">
+                <span class="form__label-text">Enter your Message:</span>
+                <textarea  class="form__input form__input--textarea" placeholder="some message" name="message"></textarea>
+            </label>
+
+            <button class="btn btn--invert btn--small btn--plane" type="submit">Send Message</button>
         </form>
     </div>
 </section>

@@ -11,10 +11,6 @@
             <ul class="nav__list">
                 <li class="nav__item">
                     <a href="#">Main</a>
-                    <!--<div class="nav__dropdown">-->
-                    <!--    <a class="nav__dropdown-item" href="#">Our Services</a>-->
-                    <!--    <a class="nav__dropdown-item" href="#">Review</a>-->
-                    <!--</div>-->
                 </li>
                 <li class="nav__item">
                     <a href="#">About Us</a>
@@ -38,13 +34,13 @@
     <div class="banner__info">
         <h1><span>Hello, </span>some slogan! </h1>
         <div class="banner__info-text">
-            <h2>Our best proposal</h2>
+            <h3>Our best proposal</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
                 expedita natus nisi soluta veritatis voluptatibus. Dignissimos dolorem dolores et eum perspiciatis
                 provident rerum vel veritatis.</p>
         </div>
         <div class="banner__info-text">
-            <h2>Contacts</h2>
+            <h3>Contacts</h3>
             <ul class="contacts">
                 <li>
                     <a class="contacts__item" href="https://www.google.com/maps/place/%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D0%B3%D0%B8%D1%8F/@63.2493455,5.6676001,5z/data=!4m6!3m5!1s0x461268458f4de5bf:0xa1b03b9db864d02b!8m2!3d60.472024!4d8.468946!16zL20vMDViNHc?entry=ttu">
@@ -68,7 +64,24 @@
         </div>
     </div>
     <div class="banner__video">
-        <img src="assets/images/pic1.jpg" alt="video">
+        <video
+                id="my-video"
+                class="video-js vjs-theme-forest banner__video-player"
+                controls
+                muted
+                preload="auto"
+                poster="assets/images/pic1.jpg"
+                data-setup="{}"
+        >
+            <source src="assets/images/nature.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+                >
+            </p>
+        </video>
     </div>
 </section>
 <!--/banner-->

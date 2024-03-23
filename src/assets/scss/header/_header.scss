@@ -1,5 +1,15 @@
+@keyframes headerFixed {
+  from {
+    opacity: 0;
+    transform: translateY(-51%);
+  } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
 .header {
-  min-height: 80vh;
+
 
   &__top {
     position: relative;
@@ -7,6 +17,18 @@
     background-color: transparent;
     padding: 0.5rem;
     min-height: 4rem;
+
+    &--fixed {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      opacity: 1;
+      transform: translateY(0);
+      background-color: #fff;
+      animation-name: headerFixed;
+      animation-duration: 1s;
+    }
 
     .container {
       display: flex;
