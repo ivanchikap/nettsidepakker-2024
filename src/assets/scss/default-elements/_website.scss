@@ -1,0 +1,46 @@
+.website {
+  background-color: #fff;
+
+  .row {
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: left;
+
+    @include widescreen {
+      margin-bottom: 20px;
+    }
+    @include laptop {
+      font-size: 34px;
+      text-align: center;
+    }
+  }
+
+  .col-4 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    padding: 40px 0;
+
+    @include widescreen {
+      padding: 20px 0;
+    }
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 30px;
+
+    @include laptop {
+      justify-content: center;
+    }
+  }
+}

@@ -9,10 +9,14 @@
 }
 
 .header {
+  padding-top: 83px;
 
 
   &__top {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 4;
     background-color: transparent;
     padding: 0.5rem;

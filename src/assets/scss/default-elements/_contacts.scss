@@ -2,8 +2,13 @@
   &__item {
     font-size: 20px;
     transition: color .2s linear;
+
     &:hover {
       color: $green;
+    }
+
+    @include mobile {
+      font-size: 18px;
     }
 
     i {

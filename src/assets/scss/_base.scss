@@ -65,16 +65,33 @@ h1 {
   @include laptop {
     font-size: 40px;
   }
+
+  @include mobile {
+    font-size: 40px;
+  }
 }
 h2 {
   font-size: 40px;
   font-family: $poppins;
+  @include mobile {
+    font-size: 30px;
+  }
 }
 h3 {
   font-size: 28px;
 
   @include laptop {
     font-size: 24px;
+  }
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+.link {
+  transition: color .2s linear;
+  &:hover {
+    color: $blue;
   }
 }
 .link-decor-on-hover {

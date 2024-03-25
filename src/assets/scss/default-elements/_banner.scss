@@ -1,12 +1,17 @@
 .banner {
   display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+  @include tablet {
+    flex-direction: column;
+  }
 
   h1 {
     position: relative;
     margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
   }
 
   &__info {
@@ -18,6 +23,12 @@
 
     @include laptop {
       padding: 20px 20px 20px 50px;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      padding: 20px;
     }
   }
 
@@ -44,7 +55,17 @@
 
   &__video {
     display: flex;
+    flex-shrink: 0;
     width: 60%;
+
+    @include tablet {
+      width: 100%;
+      height: 400px;
+    }
+
+    @include mobile {
+      height: 340px;
+    }
   }
 
   &__video-player {
