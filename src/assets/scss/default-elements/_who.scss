@@ -1,0 +1,51 @@
+.who {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  padding: 120px 0;
+  position: relative;
+  
+  @include tablet {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h2, p {
+    color: $white;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .btn {
+    min-width: 200px;
+
+    @include tablet {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .8;
+    background: rgba($blue, .8);
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}

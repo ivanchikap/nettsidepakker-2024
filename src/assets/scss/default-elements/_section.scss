@@ -1,13 +1,28 @@
 .section {
   padding: 60px 0;
 
+  @include mobile-large {
+    padding: 40px 0;
+  }
+
   &--nopading {
     padding: 0;
   }
-  
-  h2 {
-    text-align: center;
+
+  &__header {
     margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    line-height: 1.4;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 26px;
+
+    @include mobile-large {
+      font-size: 22px;
+    }
   }
 
   p {

@@ -22,11 +22,15 @@
     align-items: center;
   }
 
+  .col-8 {
+    padding: 0;
+  }
+
   &__info {
     padding: 40px 0;
 
     @include widescreen {
-      padding: 20px 0;
+      padding: 30px 0;
     }
     @include tablet {
       text-align: center;
@@ -41,6 +45,11 @@
 
     @include laptop {
       justify-content: center;
+    }
+  }
+  .btn {
+    @include mobile {
+      min-width: 220px;
     }
   }
 }

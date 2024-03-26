@@ -72,13 +72,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
         if (scrollOffset >= headerHeight + 200) {
             arrow.classList.remove("hidden");
             header.classList.add("header__top--fixed");
-            sidebar.style.top = '94px';
         }
 
         if (scrollOffset < headerHeight + 200) {
             arrow.classList.add("hidden");
             header.classList.remove("header__top--fixed");
-            sidebar.style.top = '135px';
         }
     }
 

@@ -39,13 +39,10 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#">Main</a>
+                        <a href="./index.html">Main</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">About Us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#">Services</a>
+                        <a href="./about.html">About Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="#">Templates</a>
@@ -59,6 +56,34 @@
         </div>
     </div>
     <!--/header__top-->
+    
+    
+    
+    
+    
+    
+    
+</header>
+
+<aside class="sidebar" id="sidebar">
+    <nav class="nav nav--sidebar">
+        <a class="nav__item" href="./index.html">
+            <span>Main</span>
+        </a>
+        <a class="nav__item" href="./about.html">
+            <span>About Us</span>
+        </a>
+        <a class="nav__item" href="#">
+            <span>Templates</span>
+        </a>
+        <a class="nav__item" href="#">
+            <span>Tips</span>
+        </a>
+    </nav>
+</aside>
+<!-- Main -->
+<main class="main">
+    
     <section class="banner">
         <div class="banner__info">
             <h1><span>Hello, </span>some slogan! </h1>
@@ -117,39 +142,11 @@
     </section>
     <!--/banner-->
     
-    
-    
-    
-    
-    
-</header>
-
-<aside class="sidebar" id="sidebar">
-    <nav class="nav nav--sidebar">
-        <a class="nav__item" href="#about">
-            <span>Main</span>
-        </a>
-        <a class="nav__item" href="#services">
-            <span>About Us</span>
-        </a>
-        <a class="nav__item" href="#portfolio-sec">
-            <span>Services</span>
-        </a>
-        <a class="nav__item" href="#testimonial">
-            <span>Templates</span>
-        </a>
-        <a class="nav__item" href="#contact-us">
-            <span>Tips</span>
-        </a>
-    </nav>
-</aside>
-<!-- Main -->
-<main class="main">
-    
     <section id="services" class="section services">
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Services</h2>
+                <h4 class="section__subtitle"><span class="color-blue">Want a unique design</span> or help with advertising? <br> Check out our services.</h4>
             </header>
             <div class="row">
                 <div class="col-4 col-md-6 col-xs-12">
@@ -372,7 +369,7 @@
     <section class="section section--nopading website">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8 col-lg-6 col-md-12 order-md-1">
+                <div class="col-8 col-lg-6 col-md-12 order-md-0">
                     <div id="website-slider">
                         <!-- The before image is first -->
                         <img class="website__img" src="assets/images/site1.jpg">
@@ -382,7 +379,7 @@
                     <!--  /website__info-->
                 </div>
                 <!-- /col-6-->
-                <div class="col-4 col-lg-6 col-md-12 order-md-0">
+                <div class="col-4 col-lg-6 col-md-12 order-md-1">
                     <div class="website__info">
                         <h2>Website development</h2>
                         <p>Get a unique website with us from a low monthly price by using our templates with everything
@@ -400,19 +397,29 @@
     </section>
     <!--/website-->
     
-    <section class="section who">
+    <section class="section who" style="background-image: url('assets/images/team.jpg')">
+        <div class="who__overlay"></div>
         <div class="container">
-            <h2>Who we are?!</h2>
-            <p>There will be an image with blue gradient on it with one or two sentences amd link button to about us
-                page</p>
-            <p>Who are we short paragraph with buttons that leads to about us</p>
+            <div class="row">
+                <div class="col-9 col-md-12">
+                    <h2>Who we are?!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis. Some text.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis.</p>
+                </div>
+                <div class="col-3 col-md-12">
+                    <a href="./about.html" class="btn">About Us</a>
+                </div>
+            </div>
+    
         </div>
     </section>
     <!--/who-->
     
     <section class="section talk">
         <div class="container">
-            <h2>Want to talk to us more?</h2>
+            <div class="section__header">
+                <h2>Want to talk to us more?</h2>
+            </div>
             <form class="form">
                 <label class="form__label">
                     <span class="form__label-text">Enter your full name:</span>
@@ -436,37 +443,37 @@
             </form>
         </div>
     </section>
-    <!--/who-->
+    <!--/talk-->
 </main>
 
 <!-- Footer -->
 <footer class="footer">
-    <!--
     <div class="footer__main">
+        <div class="abs-delete">Version of footer 1</div>
         <div class="container">
             <div class="footer__row">
                 <div class="footer__col-4">
                     <h4 class="footer__title">About company</h4>
                     <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, natus, pariatur! Accusamus atque est, facere illo magnam magni odit praesentium saepe sunt voluptatem! Dolor laboriosam nostrum nulla sit? Dolorem, sapiente?</p>
                 </div>
-                &lt;!&ndash; / footer__col-4 &ndash;&gt;
+                <!-- / footer__col-4 -->
                 <div class="footer__col-4">
-                    <h4 class="footer__title footer__title&#45;&#45;join">Contacts</h4>
+                    <h4 class="footer__title footer__title--join">Contacts</h4>
                     <ul class="footer__contacts-list">
-                        <li class="footer__contacts-item footer__contacts-item&#45;&#45;address">
+                        <li class="footer__contacts-item footer__contacts-item--address">
                             <a class="footer__contact link-decor-on-hover" href="#">Fiktivt Tømrerselskap AS, Storebruvegen 46, 2938 Bagn</a>
                         </li>
-                        <li class="footer__contacts-item footer__contacts-item&#45;&#45;tel">
+                        <li class="footer__contacts-item footer__contacts-item--tel">
                             <a class="footer__contact link-decor-on-hover" href="tel: +999 21 722">999 21 722</a>
                         </li>
-                        <li class="footer__contacts-item  footer__contacts-item&#45;&#45;mail">
+                        <li class="footer__contacts-item  footer__contacts-item--mail">
                             <a class="footer__contact link-decor-on-hover" href="mailto:some@email.com">some@email.com</a>
                         </li>
                     </ul>
                 </div>
-                &lt;!&ndash; / footer__col-4 &ndash;&gt;
+                <!-- / footer__col-4 -->
                 <div class="footer__col-4">
-                    <h4 class="footer__title footer__title&#45;&#45;help">Services</h4>
+                    <h4 class="footer__title footer__title--help">Services</h4>
                     <ul class="footer__default-list">
                         <li class="footer__default-item">
                             <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#business">SEO</a>
@@ -482,22 +489,22 @@
                         </li>
                     </ul>
                 </div>
-                &lt;!&ndash; / footer__col-4 &ndash;&gt;
+                <!-- / footer__col-4 -->
                 <div class="footer__col-4">
-                    <h4 class="footer__title footer__title&#45;&#45;follow">Follow Us</h4>
+                    <h4 class="footer__title footer__title--follow">Follow Us</h4>
                     <ul class="footer__socials-list">
                         <li class="footer__social-item">
-                            <a target="_blank" class="footer__social-contact footer__social-contact&#45;&#45;facebook" href="#">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--facebook" href="#">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a target="_blank" class="footer__social-contact footer__social-contact&#45;&#45;telegram" href="#">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
                                 <i class="fab fa-instagram-square"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a target="_blank" class="footer__social-contact footer__social-contact&#45;&#45;telegram" href="#">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -507,26 +514,25 @@
                             Work schedule
                         </h5>
                         <ul class="footer__contacts-list">
-                            <li class="footer__contacts-item footer__contacts-item&#45;&#45;clock d-flex align-items-center">
+                            <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
                                 <span class="footer__contact">Mon-Fri: 09:00 - 18:00,<br> Sat-Sun. - day off</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                &lt;!&ndash; / footer__col-4 &ndash;&gt;
+                <!-- / footer__col-4 -->
             </div>
         </div>
     </div>
-    -->
     <!-- /footer__main  -->
     <div class="container">
         <nav class="footer-nav">
+            <div class="abs-delete">Version of footer 2</div>
             <a class="footer-nav__item" href="#">Contact info</a>
             <a class="footer-nav__item" href="#">Sitemap</a>
-            <a class="footer-nav__item" href="#">Services</a>
             <a class="footer-nav__item" href="#">Projects</a>
             <a class="footer-nav__item" href="#">Reviews</a>
-            <a class="footer-nav__item" href="#">Team</a>
+            <a class="footer-nav__item" href="./about.html">Team</a>
             <a class="footer-nav__item" href="#">Our mission</a>
             <a class="footer-nav__item" href="#">Social Media</a>
             <a class="footer-nav__item" href="#">Contact form</a>

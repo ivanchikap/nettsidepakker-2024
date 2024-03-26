@@ -47,13 +47,20 @@
     }
   }
 
+  &__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 30%;
+  }
+
   &__actions {
     display: flex;
     gap: 10px 20px;
     margin-top: 20px;
   }
 
-  &__video {
+  &__video, &__img {
     display: flex;
     flex-shrink: 0;
     width: 60%;
