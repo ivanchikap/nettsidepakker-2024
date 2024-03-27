@@ -10,6 +10,7 @@
   color: $white;
   background-color: $green;
   box-shadow: -3px 3px 4px rgba($green, .2);
+  text-align: center;
   @extend .text-overflow;
 
   &--small {

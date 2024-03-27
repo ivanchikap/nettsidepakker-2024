@@ -8340,6 +8340,7 @@ h3 {
     color: #fff;
     background-color: #00D084;
     box-shadow: -3px 3px 4px rgba(0, 208, 132, 0.2);
+    text-align: center;
 }
 
 .btn--small {
@@ -8569,13 +8570,17 @@ h3 {
     cursor: pointer;
     width: 30px;
     height: 30px;
-    fill: #009d64;
+    fill: #00D084;
     position: fixed;
     right: 20px;
     bottom: 80px;
-    opacity: 1;
+    opacity: 0.6;
     visibility: visible;
     transition: opacity 0.2s linear;
+}
+
+.to-top:hover {
+    opacity: 1;
 }
 
 .to-top.hidden {
@@ -8686,7 +8691,7 @@ h3 {
 }
 
 .website__info {
-    padding: 40px 0;
+    padding: 40px 0 40px 15px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -8809,8 +8814,7 @@ h3 {
     right: 0;
     bottom: 0;
     content: "";
-    opacity: 0.8;
-    background: rgba(41, 182, 246, 0.8);
+    background: rgba(41, 182, 246, 0.6);
 }
 
 .who .container {
@@ -8819,9 +8823,13 @@ h3 {
 }
 
 .card-d {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
     text-align: center;
     border-radius: 8px;
-    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: -4px 4px 8px -2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: all 0.2s linear;
 }
@@ -8984,6 +8992,33 @@ h3 {
     align-items: center;
 }
 
+.team .row {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.team .col-3:not(:nth-child(-n+4)) {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .team .col-lg-4:not(:nth-child(-n+3)) {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .team .col-md-5:not(:nth-child(-n+2)) {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team .col-sm-8:not(:nth-child(-n+1)) {
+        margin-top: 30px;
+    }
+}
+
 .footer {
     background: #212121;
 }
@@ -9107,13 +9142,6 @@ h3 {
     padding-left: 1px;
     margin-top: 24px;
     margin-bottom: 28px;
-}
-
-@media screen and (max-width: 768px) {
-    .footer__title::after {
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 .footer__text {
