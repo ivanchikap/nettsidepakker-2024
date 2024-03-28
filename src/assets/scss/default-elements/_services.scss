@@ -1,5 +1,10 @@
 .services {
 
+  .col-4 {
+    display: flex;
+    justify-content: center;
+  }
+
   .col-4:not(:nth-child(-n + 3)) {
     margin-top: 4rem;
   }
