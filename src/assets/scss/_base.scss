@@ -92,6 +92,13 @@ h3 {
     font-size: 22px;
   }
 }
+h4 {
+  font-size: 26px;
+
+  @include mobile-large {
+    font-size: 24px;
+  }
+}
 .link {
   transition: color .2s linear;
   &:hover {

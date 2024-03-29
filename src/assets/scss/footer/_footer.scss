@@ -1,31 +1,23 @@
 .footer {
   background: $black;
-
-  .abs-delete {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    background-color: #fff;
-    padding: 8px;
-    font-size: 12px;
-    color: $black;
-  }
+  font-size: 20px;
 
   &__main {
     position: relative;
-    padding: 60px 0;
+    padding: 50px 0;
 
     @include mobile-large {
-      padding: 86px 0 66px;
+      padding: 40px 0;
     }
 
     @include mobile {
-      padding: 76px 0 56px;
+      padding: 30px 0;
     }
   }
 
   &__row {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -15px;
 
@@ -43,52 +35,35 @@
     padding-right: 15px;
     padding-left: 15px;
 
-    @include laptop {
+    @include tablet {
       max-width: 50%;
       flex: 0 0 50%;
     }
 
-    @include mobile-large {
-      max-width: 100%;
-      flex: 0 0 100%;
+    @include mobile {
+      max-width: 90%;
+      flex: 0 0 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:not(:nth-child(-n + 2)) {
+      @include tablet {
+        margin-top: 40px;
+      }
+    }
+
+    &:not(:nth-child(-n + 1)) {
+      @include mobile {
+        margin-top: 30px;
+      }
     }
   }
 
   &__title {
     color: #ffffff;
     font-family: $poppins;
-    font-size: 22px;
     font-weight: 500;
-
-    @include mobile {
-      font-size: 20px;
-    }
-
-    &--join {
-      @include mobile-large {
-        margin-top: 40px;
-      }
-    }
-
-    &--follow {
-      @include laptop {
-        margin-top: 40px;
-      }
-
-      @include mobile {
-        margin-top: 30px;
-      }
-    }
-
-    &--help {
-      @include laptop {
-        margin-top: 40px;
-      }
-
-      @include mobile {
-        margin-top: 30px;
-      }
-    }
 
     &::after {
       display: block;
@@ -98,13 +73,38 @@
       padding-left: 1px;
       margin-top: 24px;
       margin-bottom: 28px;
+
+      @include laptop {
+        margin-top: 20px;
+        margin-bottom: 24px;
+      }
+
+      @include tablet {
+        margin-top: 18px;
+        margin-bottom: 22px;
+      }
+
+      @include mobile-large {
+        margin-top: 16px;
+        margin-bottom: 20px;
+      }
+
+      @include mobile {
+        margin-top: 10px;
+        margin-bottom: 18px;
+      }
+    }
+
+    &--noafter {
+      &::after {
+        display: none;
+      }
     }
   }
 
   &__text {
     color: $white;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 16px;
     line-height: 1.6;
 
     @include mobile {
@@ -124,12 +124,7 @@
       display: block;
       font-weight: 900;
       color: $blue;
-      font-size: 18px;
       margin-right: 16px;
-
-      @include mobile-large {
-        font-size: 16px;
-      }
     }
 
     & + & {
@@ -155,15 +150,9 @@
 
   &__contact {
     color: $white;
-    font-size: 14px;
-    font-weight: 500;
 
     @include mobile-large {
       text-align: left;
-    }
-
-    @include mobile {
-      font-size: 13px;
     }
   }
 
@@ -180,26 +169,16 @@
       content: "\f105";
       margin-right: 14px;
       color: $blue;
-      font-size: 18px;
     }
   }
 
   &__default-contact {
     color: $white;
-    font-size: 15px;
-    font-weight: 400;
     line-height: 1.6;
-
-    @include mobile {
-      font-size: 14px;
-    }
   }
 
   &__socials-list {
     display: flex;
-    @include mobile-large {
-      justify-content: center;
-    }
   }
 
   &__social-item {
@@ -218,18 +197,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     color: #fff;
-    border-radius: 1px;
-
-
-
-    .fab {
-      font-size: 22px;
-      border-radius: 1px;
-    }
+    border-radius: 2px;
 
     &--facebook {
       background-color: #3b5998;
@@ -257,16 +229,6 @@
     margin-top: 20px;
   }
 
-  &__shedule-title {
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 18px;
-
-    @include mobile {
-      font-size: 18px;
-    }
-  }
-
   &__copyright {
     color: $white;
     font-size: 20px;
@@ -275,7 +237,7 @@
     text-align: center;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 18px;
       padding: 20px 0;
     }
   }
