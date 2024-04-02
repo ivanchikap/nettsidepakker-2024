@@ -53,37 +53,37 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 
     //to-top handler
-    const arrow = document.querySelector('#to-top');
-    const header = document.querySelector('.header__top');
-    let headerHeight = header.clientHeight;
-    let scrollOffset = document.documentElement.scrollTop;
-    const sidebar = document.getElementById('sidebar');
-
+    // const arrow = document.querySelector('#to-top');
+    // const header = document.querySelector('.header__top');
+    // let headerHeight = header.clientHeight;
+    // let scrollOffset = document.documentElement.scrollTop;
+    // const sidebar = document.getElementById('sidebar');
+    //
     // checkScroll(scrollOffset);
-    window.addEventListener('scroll', debounce(onScroll, 300));
+    // window.addEventListener('scroll', debounce(onScroll, 300));
+    //
+    // function onScroll() {
+    //     scrollOffset = document.documentElement.scrollTop;
+    //     checkScroll(scrollOffset);
+    // }
+    //
+    //
+    // function checkScroll(scrollOffset) {
+    //     if (scrollOffset >= headerHeight + 200) {
+    //         arrow.classList.remove("hidden");
+    //         header.classList.add("header__top--fixed");
+    //     }
+    //
+    //     if (scrollOffset < headerHeight + 200) {
+    //         arrow.classList.add("hidden");
+    //         header.classList.remove("header__top--fixed");
+    //     }
+    // }
 
-    function onScroll() {
-        scrollOffset = document.documentElement.scrollTop;
-        checkScroll(scrollOffset);
-    }
-
-
-    function checkScroll(scrollOffset) {
-        if (scrollOffset >= headerHeight + 200) {
-            arrow.classList.remove("hidden");
-            header.classList.add("header__top--fixed");
-        }
-
-        if (scrollOffset < headerHeight + 200) {
-            arrow.classList.add("hidden");
-            header.classList.remove("header__top--fixed");
-        }
-    }
-
-    arrow.addEventListener('click', () => {
-        document.body.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-    })
+    // arrow.addEventListener('click', () => {
+    //     document.body.scrollIntoView({
+    //         behavior: 'smooth',
+    //         block: 'start',
+    //     });
+    // })
 });

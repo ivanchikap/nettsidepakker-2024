@@ -3,19 +3,64 @@
   font-weight: 500;
   font-size: 20px;
   display: inline-block;
-  padding: 12px 30px;
-  border-radius: 8px;
-  border: 2px solid $green;
-  transition: all .2s linear;
-  color: $white;
-  background-color: $green;
-  box-shadow: -3px 3px 4px rgba($green, .2);
+  padding: 10px 30px;
+  border-radius: 50px;
   text-align: center;
   text-transform: capitalize;
+  transition: all .2s linear;
   @extend .text-overflow;
 
   @include mobile {
-    min-width: 210px;
+    min-width: 230px;
+  }
+
+  &--cta {
+    border: 2px solid $green;
+    color: $black;
+    background-color: $green;
+    box-shadow: -4px 4px 6px rgba($black, .2);
+
+    &:hover {
+      color: $black;
+      border-color: $black;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: -4px 4px 6px rgba($black, .2);
+    }
+  }
+
+  &--black {
+    color: $black;
+    border: 2px solid $black;
+    background-color: transparent;
+
+    &:hover {
+      color: $white;
+      background-color: $blue;
+      box-shadow: -4px 4px 6px rgba($black, .2);
+      border-color: $blue;
+    }
+
+    &:focus {
+      box-shadow: -4px 4px 6px rgba($black, .2);
+    }
+  }
+
+  &--onblue {
+    color: $white;
+    border: 2px solid $white;
+
+    &:focus {
+      box-shadow: -4px 4px 6px rgba($black, .2);
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $black;
+      box-shadow: -4px 4px 6px rgba($black, .2);
+    }
   }
 
   &__wrapper {
@@ -25,17 +70,25 @@
     gap: 20px 30px;
     margin: 30px 0 0 0;
 
+    @include tablet {
+    margin-top: 20px;
+  }
+
     @include mobile {
       flex-direction: column;
     }
 
     &--left {
       justify-content: flex-start;
+
+      @include tablet {
+        justify-content: center;
+      }
     }
   }
 
   &--small {
-    padding: 8px 12px;
+    padding: 8px 20px;
     font-size: 18px;
   }
 
@@ -65,28 +118,8 @@
     font-weight: 400;
   }
 
-  &:hover {
-    color: $black;
-    border-color: $black;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  
-  &:focus {
-    box-shadow: -6px 6px 6px rgba($green, .2);
-  }
-
-  &--invert {
-    color: $black;
-    border-color: $black;
-    background-color: transparent;
-    box-shadow: none;
-
-    &:hover {
-      color: $white;
-      background-color: $green;
-      box-shadow: -3px 3px 4px rgba($green, .2);
-      border-color: $green;
-    }
+  &--shop::before {
+    content: "\f07a";
+    font-weight: 900;
   }
 }

@@ -1,4 +1,10 @@
 .logo {
   flex-shrink: 0;
   max-width: 220px;
+  padding: 10px 0;
+
+  img {
+    display: block;
+    @extend .img-cover;
+  }
 }
