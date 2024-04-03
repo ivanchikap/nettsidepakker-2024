@@ -8123,7 +8123,7 @@ h4 {
     color: #29B6F6;
 }
 
-.img-cover, .logo img {
+.img-cover, .shop__right img, .logo img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8153,7 +8153,7 @@ h4 {
     color: transparent;
     position: absolute;
     top: 50%;
-    right: 1.5rem;
+    right: 0.5rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background: none;
@@ -8231,6 +8231,12 @@ h4 {
     transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
+@media screen and (max-width: 576px) {
+    .sidebar {
+        top: 70px;
+    }
+}
+
 .show-sidebar .sidebar {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -8241,6 +8247,13 @@ h4 {
     flex-shrink: 0;
     max-width: 220px;
     padding: 10px 0;
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        padding: 4px 0;
+        max-width: 200px;
+    }
 }
 
 .logo img {
@@ -8478,7 +8491,7 @@ h4 {
 }
 
 .btn--plane::before {
-    content: "\f0e0";
+    content: "\f1d8";
     font-weight: 400;
 }
 
@@ -8697,69 +8710,95 @@ h4 {
     visibility: hidden;
 }
 
-.form {
-    color: #212121;
-    margin-bottom: 3rem;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.form__control + .form__control {
+    margin-top: 2.7rem;
 }
 
 @media screen and (max-width: 992px) {
-    .form {
-        max-width: 100%;
-        margin-left: 0;
+    .form__control + .form__control {
+        margin-top: 2rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .form {
-        max-width: 80%;
+    .form__control + .form__control {
+        margin-top: 1.6rem;
     }
-}
-
-@media screen and (max-width: 576px) {
-    .form {
-        max-width: 95%;
-    }
-}
-
-.form__title {
-    color: #212121;
-    font-size: 18px;
-    margin-bottom: 1rem;
 }
 
 .form__label {
-    margin-bottom: 1rem;
-    display: block;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    margin-left: 26px;
 }
 
-.form__label-text {
-    font-size: 16px;
-    color: #212121;
+.form__element {
     display: block;
-    text-align: left;
-    margin-bottom: 2px;
-}
-
-.form__input {
-    font-size: 18px;
+    padding: 1.5rem 2.6rem;
     width: 100%;
-    padding: 14px;
-    border-bottom: 1px solid #212121;
-    border-radius: 0.4em;
+    border-radius: 2.7rem;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    color: #212121;
+    font-size: 1.2rem;
+    transition: border 0.1s linear;
 }
 
-.form__input:active, .form__input:focus {
-    box-shadow: 0 4px 2px -2px rgba(0, 208, 132, 0.2), 0px 2px 2px 0px rgba(0, 208, 132, 0.14), 0px 2px 4px 0px rgba(0, 208, 132, 0.12);
-    border-color: #00D084;
+@media screen and (max-width: 768px) {
+    .form__element {
+        padding: 1.2rem 1.8rem;
+        border-radius: 2.2rem;
+    }
 }
 
-.form__input--textarea {
-    margin-bottom: 1rem;
-    min-height: 76px;
-    max-height: 200px;
+.form__element:focus {
+    border-color: #eee;
+}
+
+.form__element::-webkit-input-placeholder {
+    font-weight: 300;
+}
+
+.form__element::-moz-placeholder {
+    font-weight: 300;
+}
+
+.form__element:-ms-input-placeholder {
+    font-weight: 300;
+}
+
+.form__element::-ms-input-placeholder {
+    font-weight: 300;
+}
+
+.form__element::placeholder {
+    font-weight: 300;
+}
+
+.form__element--textarea {
+    min-height: 12rem;
+}
+
+.form__btn {
+    margin-top: 3rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+    .form__btn {
+        margin-top: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form__btn {
+        margin-top: 2rem;
+    }
+}
+
+.form .btn {
+    min-width: 200px;
 }
 
 .website {
@@ -8858,10 +8897,21 @@ h4 {
 .a-card {
     text-align: center;
     max-width: 400px;
+    cursor: pointer;
+}
+
+.a-card:hover .a-card__title {
+    color: #29B6F6;
+    text-decoration: underline;
+}
+
+.a-card:hover .a-card__icon {
+    fill: #29B6F6;
 }
 
 .a-card__icon {
     height: 60px;
+    transition: fill 0.2s linear;
 }
 
 .a-card__title {
@@ -8870,6 +8920,7 @@ h4 {
     font-weight: 500;
     font-size: 2.4rem;
     margin: 2rem 0 1rem;
+    transition: color 0.2s linear;
 }
 
 .a-card__desc {
@@ -9088,6 +9139,236 @@ h4 {
     object-fit: cover;
 }
 
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(33, 33, 33, 0.9);
+}
+
+.modal.show {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.modal__dialog {
+    position: relative;
+    width: 100%;
+    max-width: 120rem;
+    border-radius: 18px;
+    max-height: 90vh;
+    margin: auto;
+    overflow: auto;
+    background-color: #fff;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+@media screen and (max-width: 768px) {
+    .modal__dialog {
+        max-height: 94vh;
+    }
+}
+
+.modal__dialog--sm {
+    max-width: 90rem;
+}
+
+.modal__close {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    color: #212121;
+    background-color: transparent;
+    font-size: 3.6rem;
+    z-index: 1;
+    transition: color 0.2s linear, -webkit-transform 0.2s linear;
+    transition: color 0.2s linear, transform 0.2s linear;
+    transition: color 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.modal__close:hover {
+    color: #000;
+    -webkit-transform: translateY(-0.2rem);
+    transform: translateY(-0.2rem);
+}
+
+@media screen and (max-width: 992px) {
+    .modal__close {
+        font-size: 3rem;
+        top: 0.6rem;
+        right: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal__close {
+        font-size: 2.6rem;
+    }
+}
+
+.modal__content {
+    padding: 7.5rem 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .modal__content {
+        padding: 6.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal__content {
+        padding: 5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal__content {
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal__content {
+        padding: 2.4rem 1rem;
+    }
+}
+
+.modal__title {
+    font-size: 4.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.modal__title--contact {
+    text-align: left;
+    margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .modal__title {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal__title {
+        font-size: 3.2rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.modal__subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.modal__buttons {
+    text-align: center;
+}
+
+.modal__buttons .btn + .btn {
+    margin-left: 1.4rem;
+}
+
+@media screen and (max-width: 576px) {
+    .modal__buttons .btn--smallest:last-child {
+        display: none;
+    }
+}
+
+.shop {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.shop__left {
+    padding: 3rem;
+    width: 48%;
+}
+
+@media screen and (max-width: 992px) {
+    .shop__left {
+        padding: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop__left {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .shop__left {
+        width: 100%;
+    }
+}
+
+.shop__right {
+    width: 52%;
+    max-height: 100%;
+    background-color: #fefefe;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 576px) {
+    .shop__right {
+        display: none;
+    }
+}
+
+.shop__info {
+    margin: 2rem 0 3.5rem 0;
+}
+
+@media screen and (max-width: 992px) {
+    .shop__info {
+        margin: 2rem 0 3rem 0;
+    }
+}
+
+.shop__info-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.shop__info-item + .shop__info-item {
+    margin-top: 1rem;
+}
+
+.shop__info-item i {
+    margin-right: 0.8rem;
+}
+
+.shop__info-link:hover {
+    text-decoration: underline;
+}
+
 @-webkit-keyframes headerFixed {
     from {
         opacity: 0;
@@ -9149,23 +9430,41 @@ h4 {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding-right: 40px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .header__top .container {
+        padding-right: 15px;
+    }
 }
 
 .header__shopping {
     position: absolute;
     top: 50%;
-    right: 4px;
-    padding: 4px 6px;
+    right: 10px;
+    padding: 4px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
+@media screen and (max-width: 992px) {
+    .header__shopping {
+        right: 68px;
+    }
+}
+
 .header__shopping i {
-    font-size: 24px;
+    font-size: 26px;
     color: #00D084;
     cursor: pointer;
     transition: color 0.2s linear;
+}
+
+@media screen and (max-width: 992px) {
+    .header__shopping i {
+        font-size: 30px;
+    }
 }
 
 .header__shopping i:hover {

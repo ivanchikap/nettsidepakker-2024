@@ -39,21 +39,34 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-right: 40px;
+      padding-right: 50px;
+
+      @include tablet {
+        padding-right: 15px;
+      }
     }
   }
 
   &__shopping {
     position: absolute;
     top: 50%;
-    right: 4px;
-    padding: 4px 6px;
+    right: 10px;
+    padding: 4px;
     transform: translateY(-50%);
+
+    @include tablet {
+      right: 68px;
+    }
+
     i {
-      font-size: 24px;
+      font-size: 26px;
       color: $green;
       cursor: pointer;
       transition: color .2s linear;
+
+      @include tablet {
+        font-size: 30px;
+      }
 
       &:hover {
         color: $black;

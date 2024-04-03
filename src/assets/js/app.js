@@ -3,21 +3,21 @@ import {debounce} from "debounce";
 document.addEventListener('DOMContentLoaded', (e) => {
 
     //all links anchors
-    // const links = document.querySelectorAll('.btn--anchor');
-    //
-    // links.forEach((link) => {
-    //     link.addEventListener('click', scrollToSection)
-    // })
-    //
-    // function scrollToSection(e) {
-    //     e.preventDefault();
-    //     const link = e.target.className === 'btn' ? e.target : e.target.closest('a');
-    //     const blockId = link.getAttribute('href').substring(1);
-    //     document.getElementById(blockId).scrollIntoView({
-    //         behavior: "smooth",
-    //         block: "start"
-    //     });
-    // }
+    const links = document.querySelectorAll('.btn-anchor-js');
+
+    links.forEach((link) => {
+        link.addEventListener('click', scrollToSection)
+    })
+
+    function scrollToSection(e) {
+        e.preventDefault();
+        const link = e.target.className === 'btn' ? e.target : e.target.closest('a');
+        const blockId = link.getAttribute('href').substring(1);
+        document.getElementById(blockId).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
     //
     // //nav
     // const nav = document.querySelector('.nav--header');

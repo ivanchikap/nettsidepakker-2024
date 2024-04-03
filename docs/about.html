@@ -60,7 +60,7 @@
                 </ul>
             </nav>
             <!-- /nav-->
-            <div class="header__shopping">
+            <div class="header__shopping" id="shopping-cart" data-modal="#modalShopping">
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
@@ -96,7 +96,96 @@
             <span>Tips</span>
         </a>
     </nav>
-</aside>
+</aside><div class="modal" id="modalShopping">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="shop">
+            <div class="shop__left">
+                <h3 class="modal__title modal__title--contact">Shop website</h3>
+                <h5 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h5>
+
+                <ul class="shop__info">
+                    <li class="shop__info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="shop__info-link" href="tel: (200) 100 3000">(200) 100 3000</a>
+                    </li>
+                    <li class="shop__info-item">
+                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
+                    </li>
+                </ul>
+                <!--/shop__info-->
+
+                <form class="form" action="/" method="post">
+                    <div class="form__control">
+                        <label class="form__label" for="full-name">Full name</label>
+                        <input type="text" class="form__element" id="full-name" placeholder="John Smith">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="formInput">Email address</label>
+                        <input type="text" class="form__element" id="formInput" placeholder="Address e-mail">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="formTextarea">Request</label>
+                        <textarea class="form__element form__element--textarea" name="formTextarea" id="formTextarea" placeholder="Type your request..."></textarea>
+                    </div>
+                    <div class="form__btn">
+                        <button class="btn btn--cta btn--plane" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <!--/shop__left-->
+            <div class="shop__right">
+                <img src="assets/images/contact.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div>
+<div class="modal" id="modalService">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="shop">
+            <div class="shop__left">
+                <h3 class="modal__title modal__title--contact">Some service</h3>
+                <h5 class="modal__subtitle">description of the service!</h5>
+
+                <ul class="shop__info">
+                    <li class="shop__info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="shop__info-link" href="tel: (200) 100 3000">(200) 100 3000</a>
+                    </li>
+                    <li class="shop__info-item">
+                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
+                    </li>
+                </ul>
+                <!--/shop__info-->
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis ea eligendi expedita facere illo incidunt laboriosam odio odit, pariatur provident quaerat quibusdam repudiandae suscipit totam ullam ut voluptate.</p>
+            </div>
+            <!--/shop__left-->
+            <div class="shop__right">
+                <img src="assets/images/contact.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div>
 <!-- Main -->
 <main class="main">
     <section class="banner banner--alt">

@@ -9,6 +9,9 @@
   background-color: rgba(0, 0, 0, .7);
   transform: translateX(101%);
   transition: transform .3s linear;
+  @include mobile {
+    top: 70px;
+  }
 
   .show-sidebar & {
     transform: translateX(0);

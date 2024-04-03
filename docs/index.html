@@ -60,7 +60,7 @@
                 </ul>
             </nav>
             <!-- /nav-->
-            <div class="header__shopping">
+            <div class="header__shopping" id="shopping-cart" data-modal="#modalShopping">
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
@@ -96,7 +96,96 @@
             <span>Tips</span>
         </a>
     </nav>
-</aside>
+</aside><div class="modal" id="modalShopping">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="shop">
+            <div class="shop__left">
+                <h3 class="modal__title modal__title--contact">Shop website</h3>
+                <h5 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h5>
+
+                <ul class="shop__info">
+                    <li class="shop__info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="shop__info-link" href="tel: (200) 100 3000">(200) 100 3000</a>
+                    </li>
+                    <li class="shop__info-item">
+                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
+                    </li>
+                </ul>
+                <!--/shop__info-->
+
+                <form class="form" action="/" method="post">
+                    <div class="form__control">
+                        <label class="form__label" for="full-name">Full name</label>
+                        <input type="text" class="form__element" id="full-name" placeholder="John Smith">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="formInput">Email address</label>
+                        <input type="text" class="form__element" id="formInput" placeholder="Address e-mail">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="formTextarea">Request</label>
+                        <textarea class="form__element form__element--textarea" name="formTextarea" id="formTextarea" placeholder="Type your request..."></textarea>
+                    </div>
+                    <div class="form__btn">
+                        <button class="btn btn--cta btn--plane" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <!--/shop__left-->
+            <div class="shop__right">
+                <img src="assets/images/contact.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div>
+<div class="modal" id="modalService">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="shop">
+            <div class="shop__left">
+                <h3 class="modal__title modal__title--contact">Some service</h3>
+                <h5 class="modal__subtitle">description of the service!</h5>
+
+                <ul class="shop__info">
+                    <li class="shop__info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="shop__info-link" href="tel: (200) 100 3000">(200) 100 3000</a>
+                    </li>
+                    <li class="shop__info-item">
+                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
+                    </li>
+                </ul>
+                <!--/shop__info-->
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis ea eligendi expedita facere illo incidunt laboriosam odio odit, pariatur provident quaerat quibusdam repudiandae suscipit totam ullam ut voluptate.</p>
+            </div>
+            <!--/shop__left-->
+            <div class="shop__right">
+                <img src="assets/images/contact.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div>
 <!-- Main -->
 <main class="main">
     
@@ -110,7 +199,7 @@
                     provident rerum vel veritatis.</p>
             </div>
             <div class="btn__wrapper btn__wrapper--left">
-                <a class="btn btn--cta btn--email" href="#">Mail Us</a>
+                <a class="btn btn--cta btn--email btn-anchor-js" href="#who">Mail Us</a>
                 <a class="btn btn--cta btn--phone" href="tel:380967221122">Call Us</a>
             </div>
         </div>
@@ -139,7 +228,7 @@
     </section>
     <!--/banner-->
     
-    <section class="section section--nopading website">
+    <section id="website" class="section section--nopading website">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 col-md-12 order-md-0">
@@ -179,7 +268,7 @@
     
             <div class="row">
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
                              enable-background="new 0 0 512 512">
@@ -199,7 +288,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
                             <g fill-rule="evenodd" clip-rule="evenodd">
                                 <path d="M29.461 46.059l-2.742.096-2.645.409-2.574.649-2.381.938-2.357 1.107-2.214 1.347-2.044 1.539-1.876 1.684-1.708 1.924-1.564 2.044-1.298 2.165-1.179 2.358-.866 2.453-.649 2.502-.409 2.645-.121 1.396v48.781l.121 2.693.409 2.693.649 2.502.866 2.454 1.179 2.357 1.298 2.164 1.564 2.045 1.708 1.924 1.876 1.683 2.044 1.541 2.214 1.346 2.357 1.107 2.381.866 2.574.722 2.645.336 1.347.121 1.395.047h133.834l2.693-.168 2.621-.336 2.575-.722 2.453-.866 2.357-1.107 2.166-1.346 2.043-1.541 1.877-1.683 1.756-1.924 1.516-2.045 1.347-2.164 1.106-2.357.89-2.454.625-2.502.409-2.693.121-1.348.072-1.345V72.662l-.193-2.743-.409-2.645-.625-2.502-.89-2.453-1.106-2.358-1.347-2.165-1.516-2.044-1.756-1.924-1.877-1.684-2.043-1.539-2.166-1.347-2.357-1.107-2.453-.938-2.575-.649-2.621-.409-1.347-.048-1.346-.048H29.461z"/>
@@ -216,7 +305,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" fill="#000000" version="1.1" id="Capa_1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                              viewBox="0 0 300.004 300.004" xml:space="preserve">
@@ -245,7 +334,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="google-ads">
                             <path stroke="#000"
                                   d="M9.37997 5.53758C9.13795 5.97024 9 6.46901 9 7C9 7.50649 9.12552 7.98367 9.34714 8.40212L12 13.266M9.37997 5.53758C9.89312 4.6202 10.8741 4 12 4C13.1554 4 14.1582 4.65313 14.6594 5.61032L20.5987 16.5C20.8539 16.9413 21 17.4536 21 18C21 19.6569 19.6569 21 18 21C16.8598 21 15.8682 20.3639 15.3606 19.4272L12 13.266M9.37997 5.53758L3.35145 16.5898M3.35145 16.5898C3.27389 16.7351 3.20795 16.8876 3.15486 17.046C3.05442 17.3457 3 17.6665 3 18C3 19.6569 4.34315 21 6 21C6.94717 21 7.79182 20.5611 8.34162 19.8755C8.45367 19.7358 8.55348 19.5858 8.6394 19.4272M3.35145 16.5898C3.85618 15.6438 4.85291 15 6 15C7.65685 15 9 16.3431 9 18C9 18.5167 8.8694 19.0028 8.6394 19.4272M8.6394 19.4272L12 13.266"></path>
@@ -259,7 +348,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 118.3"
                              style="enable-background:new 0 0 122.88 118.3" xml:space="preserve"><style type="text/css">.st0 {
@@ -277,7 +366,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 90.55"
                              style="enable-background:new 0 0 122.88 90.55" xml:space="preserve"><style type="text/css">.st0 {
@@ -295,7 +384,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" fill="#000000" version="1.1" id="Capa_1"
                              xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -332,7 +421,7 @@
                     </article>
                 </div>
                 <div class="col-4 col-md-6 col-xs-12">
-                    <article class="a-card">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
                              viewBox="0 0 512 512" xml:space="preserve">
@@ -406,9 +495,10 @@
                     <br> Check out our services.</h4>
             </header>
         </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <article class="a-card">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
                              enable-background="new 0 0 512 512">
@@ -425,8 +515,10 @@
                         <p class="a-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa
                             dolor dolore enim, explicabo, illum magnam magni maiores nulla possimus quasi qui quisquam,
                             totam velit voluptatem. Asperiores hic quibusdam saepe.</p>
-                    </article></div>
-                    <div class="swiper-slide"> <article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
                             <g fill-rule="evenodd" clip-rule="evenodd">
                                 <path d="M29.461 46.059l-2.742.096-2.645.409-2.574.649-2.381.938-2.357 1.107-2.214 1.347-2.044 1.539-1.876 1.684-1.708 1.924-1.564 2.044-1.298 2.165-1.179 2.358-.866 2.453-.649 2.502-.409 2.645-.121 1.396v48.781l.121 2.693.409 2.693.649 2.502.866 2.454 1.179 2.357 1.298 2.164 1.564 2.045 1.708 1.924 1.876 1.683 2.044 1.541 2.214 1.346 2.357 1.107 2.381.866 2.574.722 2.645.336 1.347.121 1.395.047h133.834l2.693-.168 2.621-.336 2.575-.722 2.453-.866 2.357-1.107 2.166-1.346 2.043-1.541 1.877-1.683 1.756-1.924 1.516-2.045 1.347-2.164 1.106-2.357.89-2.454.625-2.502.409-2.693.121-1.348.072-1.345V72.662l-.193-2.743-.409-2.645-.625-2.502-.89-2.453-1.106-2.358-1.347-2.165-1.516-2.044-1.756-1.924-1.877-1.684-2.043-1.539-2.166-1.347-2.357-1.107-2.453-.938-2.575-.649-2.621-.409-1.347-.048-1.346-.048H29.461z"/>
@@ -440,8 +532,10 @@
                             laborum quia sunt? Commodi, culpa dolorem doloremque iste maxime minus modi nemo provident, quod
                             ullam vero voluptates.
                         </p>
-                    </article></div>
-                    <div class="swiper-slide"><article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" fill="#000000" version="1.1" id="Capa_1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                              viewBox="0 0 300.004 300.004" xml:space="preserve">
@@ -467,8 +561,10 @@
                             voluptatibus. Atque beatae debitis dignissimos dolorem eius fugit ipsam iste laboriosam maxime
                             possimus similique sit tempore, ullam vel!
                         </p>
-                    </article></div>
-                    <div class="swiper-slide"> <article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="google-ads">
                             <path stroke="#000"
                                   d="M9.37997 5.53758C9.13795 5.97024 9 6.46901 9 7C9 7.50649 9.12552 7.98367 9.34714 8.40212L12 13.266M9.37997 5.53758C9.89312 4.6202 10.8741 4 12 4C13.1554 4 14.1582 4.65313 14.6594 5.61032L20.5987 16.5C20.8539 16.9413 21 17.4536 21 18C21 19.6569 19.6569 21 18 21C16.8598 21 15.8682 20.3639 15.3606 19.4272L12 13.266M9.37997 5.53758L3.35145 16.5898M3.35145 16.5898C3.27389 16.7351 3.20795 16.8876 3.15486 17.046C3.05442 17.3457 3 17.6665 3 18C3 19.6569 4.34315 21 6 21C6.94717 21 7.79182 20.5611 8.34162 19.8755C8.45367 19.7358 8.55348 19.5858 8.6394 19.4272M3.35145 16.5898C3.85618 15.6438 4.85291 15 6 15C7.65685 15 9 16.3431 9 18C9 18.5167 8.8694 19.0028 8.6394 19.4272M8.6394 19.4272L12 13.266"></path>
@@ -479,8 +575,10 @@
                             voluptatibus. Atque beatae debitis dignissimos dolorem eius fugit ipsam iste laboriosam maxime
                             possimus similique sit tempore!
                         </p>
-                    </article></div>
-                    <div class="swiper-slide"> <article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 118.3"
                              style="enable-background:new 0 0 122.88 118.3" xml:space="preserve"><style type="text/css">.st0 {
@@ -495,8 +593,10 @@
                             voluptatibus. Atque beatae debitis dignissimos dolorem eius fugit ipsam iste laboriosam maxime
                             possimus similique sit tempore, ullam vel!
                         </p>
-                    </article></div>
-                    <div class="swiper-slide"> <article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 90.55"
                              style="enable-background:new 0 0 122.88 90.55" xml:space="preserve"><style type="text/css">.st0 {
@@ -511,8 +611,10 @@
                             voluptatibus. Atque beatae debitis dignissimos dolorem eius fugit ipsam iste laboriosam maxime
                             possimus similique sit tempore, ullam vel!
                         </p>
-                    </article></div>
-                    <div class="swiper-slide"> <article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" fill="#000000" version="1.1" id="Capa_1"
                              xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -546,8 +648,10 @@
                             voluptatibus. Atque beatae debitis dignissimos dolorem eius fugit ipsam iste laboriosam maxime
                             possimus similique sit tempore, ullam vel!
                         </p>
-                    </article></div>
-                    <div class="swiper-slide"><article class="a-card">
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article data-modal="#modalService" class="a-card">
                         <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
                              viewBox="0 0 512 512" xml:space="preserve">
@@ -602,20 +706,21 @@
                             voluptatibus. Atque beatae debitis dignissimos dolorem eius fugit ipsam iste laboriosam maxime
                             possimus similique sit tempore, ullam vel!
                         </p>
-                    </article></div>
+                    </article>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
-            <div class="btn__wrapper">
-                <a class="btn btn--black" href="./services.html">some button</a>
-                <a class="btn btn--black btn--service" href="./services.html">Our Services</a>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="btn__wrapper">
+            <a class="btn btn--black" href="./services.html">some button</a>
+            <a class="btn btn--black btn--service" href="./services.html">Our Services</a>
+        </div>
     </section>
     <!--/services-->
     
-    <section class="section who">
+    <section id="who" class="section who">
         <div class="who__overlay"></div>
         <div class="container">
             <div class="row">
@@ -633,7 +738,7 @@
     </section>
     <!--/who-->
     
-    <section class="section talk">
+    <section id="talk" class="section talk">
         <div class="container">
             <div class="section__header">
                 <h2>Want to talk to us more?</h2>
