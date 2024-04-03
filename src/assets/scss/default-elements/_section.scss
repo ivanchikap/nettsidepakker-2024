@@ -12,6 +12,10 @@
   &__header {
     margin-bottom: 40px;
     text-align: center;
+    
+    &--left {
+      text-align: left;
+    }
   }
 
   &__subtitle {

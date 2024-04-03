@@ -72,6 +72,59 @@ title: Main
 </section>
 <!--/website-->
 
+<section id="testimonial" class="section testimonial">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Testimonials</h2>
+            <h4 class="section__subtitle">
+                <span class="color-blue">You can see reviews</span> of our works
+            </h4>
+        </header>
+        <div class="testimonial__slider">
+            <div class="testimonial__slider-item">
+                <div class="response">
+                    <div class="response__badge">
+                        <img src="assets/images/man1.jpg" alt="some man">
+                    </div>
+                    <div class="response__info">
+                        <h3 class="response__name">John Smith</h3>
+                        <p class="response__type">
+                            <span>Job type:</span>
+                            <span>seo and smm</span>
+                        </p>
+                        <p class="response__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                            cupiditate dolor ipsa, ipsam iusto laudantium necessitatibus odio optio possimus repellat.
+                            Consequuntur dicta est ipsum, libero non qui sapiente sequi tempora?</p>
+                    </div>
+                </div>
+                <!-- /response-->
+            </div>
+            <!--  /test-slider__item-->
+            <div class="testimonial__slider-item">
+                <div class="response">
+                    <div class="response__badge">
+                        <img src="assets/images/woman.jpg" alt="avatar">
+                    </div>
+                    <div class="response__info">
+                        <h3 class="response__name">Yana Dukhovska</h3>
+                        <p class="response__type">
+                            <span>Job type:</span>
+                            <span>website development</span>
+                        </p>
+                        <p></p>
+                        <p class="response__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+                            aliquam amet enim explicabo fugiat harum id illo impedit inventore, labore magni omnis
+                            placeat praesentium, quas quia quibusdam quo vitae.</p>
+                    </div>
+                </div>
+                <!-- /response-->
+            </div>
+            <!--  /test-slider__item-->
+        </div>
+    </div>
+</section>
+<!--/testimonial-->
+
 <section id="services" class="section services">
     <div class="container">
         <header class="section__header">
@@ -552,32 +605,47 @@ title: Main
 </section>
 <!--/who-->
 
-<section id="talk" class="section talk">
+<section id="talk" class="section section--nopading talk">
     <div class="container">
-        <div class="section__header">
-            <h2>Want to talk to us more?</h2>
+        <div class="row no-gutters">
+            <div class="col-5 col-md-12">
+                <div class="section__header">
+                    <h2>Want to talk to us more?</h2>
+                    <h4 class="section__subtitle">
+                        <span class="color-blue">Write to us</span> we call you.
+                        <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                    </h4>
+                </div>
+            </div>
+            <!--/col-6-->
+            <div class="col-7 col-md-12">
+                <form class="c-form">
+                    <h4 class="c-form__title">Bli Kontaktet</h4>
+                    <div class="c-form__group">
+                        <label class="c-form__label">
+                            <span class="c-form__label-text">Foretakstnavn</span>
+                            <input name="fullname" class="c-form__input" type="text" placeholder="Foretakstnavn">
+                        </label>
+                        <label class="c-form__label">
+                            <span class="c-form__label-text">Ditt Navn</span>
+                            <input name="ditt" class="c-form__input" type="text" placeholder="Ditt Navn">
+                        </label>
+                    </div>
+                    <div class="c-form__group">
+                        <label class="c-form__label">
+                            <span class="c-form__label-text">Telefon</span>
+                            <input class="c-form__input" name="subject" type="tel" placeholder="096 333 33 33">
+                        </label>
+                        <label class="c-form__label">
+                            <span class="c-form__label-text">E-POST</span>
+                            <input class="c-form__input" placeholder="some@emial.com" name="email">
+                        </label>
+                    </div>
+                    <button class="btn btn--blue btn--small btn--plane" type="submit">Bli Kontaktet</button>
+                </form>
+            </div>
+            <!--/col-6-->
         </div>
-        <form class="form">
-            <label class="form__label">
-                <span class="form__label-text">Enter your full name:</span>
-                <input name="fullname" class="form__input" type="text" placeholder="John Smith">
-            </label>
-            <label class="form__label">
-                <span class="form__label-text">Put in your email:</span>
-                <input name="email" class="form__input" type="text" placeholder="someemail@gmail.com">
-            </label>
-            <label class="form__label">
-                <span class="form__label-text">Enter your Subject:</span>
-                <input class="form__input" name="subject" type="text" placeholder="some subject">
-            </label>
-            <label class="form__label">
-                <span class="form__label-text">Enter your Message:</span>
-                <textarea class="form__input form__input--textarea" placeholder="some message"
-                          name="message"></textarea>
-            </label>
-
-            <button class="btn btn--cta btn--small btn--plane" type="submit">Send Message</button>
-        </form>
     </div>
 </section>
 <!--/talk-->

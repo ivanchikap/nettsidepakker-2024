@@ -1,0 +1,56 @@
+.c-form {
+  background-color: lighten(#2bb7f6, 20%);
+  height: 100%;
+  padding: 30px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+  }
+
+
+  &__group {
+    display: flex;
+    margin: 20px 0;
+    gap: 12px 16px;
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-family: $poppins;
+  }
+
+  .btn {
+    @include tablet {
+      width: 40%;
+      min-width: 220px;
+    }
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__label-text {
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+    font-size: 18px;
+    padding-left: 14px;
+  }
+
+  &__input {
+    padding: 12px 16px;
+    border-radius: 24px;
+    font-size: 18px;
+    width: 100%;
+  }
+}

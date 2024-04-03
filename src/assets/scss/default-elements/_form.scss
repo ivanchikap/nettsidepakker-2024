@@ -61,9 +61,17 @@
     @include mobile-large {
       margin-top: 2rem;
     }
+    
+    @include mobile {
+      text-align: left;
+    }
   }
 
   .btn {
     min-width: 200px;
+
+    @include mobile-large {
+      width: 80%;
+    }
   }
 }

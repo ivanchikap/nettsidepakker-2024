@@ -48,8 +48,21 @@
     }
   }
 
+  &--blue {
+    background-color: $blue;
+    box-shadow: -4px 4px 6px rgba($black, .2);
+    border: 2px solid $blue;
+
+    &:hover {
+      box-shadow: none;
+      border: 2px solid $black;
+      background-color: #fff;
+    }
+  }
+
   &--onblue {
     color: $white;
+    background-color: transparent;
     border: 2px solid $white;
 
     &:focus {
