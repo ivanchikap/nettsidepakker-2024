@@ -1,139 +1,33 @@
 ---
 layout: default
-title: Main
+title: Projects
 ---
-
-<section class="banner">
+<section class="banner banner--alt">
     <div class="banner__info">
-        <h1><span>Hello, </span>some slogan! </h1>
+        <h1><span>Our </span> projects</h1>
         <div class="banner__info-text">
-            <h3>Our best proposal</h3>
+            <h3>We do some projects</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
-                expedita natus nisi soluta veritatis voluptatibus. Dignissimos dolorem dolores et eum perspiciatis
-                provident rerum vel veritatis.</p>
-        </div>
-        <div class="btn__wrapper btn__wrapper--left">
-            <a class="btn btn--cta btn--email btn-anchor-js" href="#who">Mail Us</a>
+                expedita natus nisi soluta veritatis voluptatibus. </p>
         </div>
     </div>
     <!-- /banner__info-->
-    <div class="banner__video">
-        <video
-                id="my-video"
-                class="video-js vjs-theme-forest banner__video-player"
-                controls
-                muted
-                preload="auto"
-                poster="assets/images/pic1.jpg"
-                data-setup="{}"
-        >
-            <source src="assets/images/nature.mp4" type="video/mp4"/>
-            <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank"
-                >supports HTML5 video</a
-                >
-            </p>
-        </video>
+    <div class="banner__img" style="background-image:linear-gradient(200deg, rgba(41, 182, 246, 0.8) 0%, rgba(41, 182, 246, 0.3) 100%),  url('assets/images/team.jpg')">
     </div>
     <!--/banner__video-->
 </section>
 <!--/banner-->
 
-<section id="website" class="section section--nopading website">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 col-md-12 order-md-0">
-                <div id="website-slider">
-                    <!-- The before image is first -->
-                    <img class="website__img" src="assets/images/before.jpg">
-                    <!-- The after image is last -->
-                    <img class="website__img" src="assets/images/after.jpg">
-                </div>
-                <!--  /website__info-->
-            </div>
-            <!-- /col-6-->
-            <div class="col-6 col-md-12 order-md-1">
-                <div class="website__info">
-                    <h2>Website development</h2>
-                    <p>Get a unique website with us from a low monthly price by using our templates with everything
-                        included. Go to templates to see prices. </p>
-                    <div class="website__actions">
-                        <a class="btn btn--cta btn--shop" href="#">Shop website</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /website__slider-->
-        </div>
-        <!--/col-6-->
-    </div>
-</section>
-<!--/website-->
-
-<section id="testimonial" class="section testimonial">
+<section class="section services services--swiper">
     <div class="container">
         <header class="section__header">
-            <h2 class="section__title">Testimonials</h2>
-            <h4 class="section__subtitle">
-                <span class="color-blue">You can see reviews</span> of our works
-            </h4>
+            <h2 class="section__title">Projects</h2>
+            <h4 class="section__subtitle"><span class="color-blue">Just need</span> to change service card on project card</h4>
         </header>
-        <div class="testimonial__slider">
-            <div class="testimonial__slider-item">
-                <div class="response">
-                    <div class="response__badge">
-                        <img src="assets/images/man1.jpg" alt="some man">
-                    </div>
-                    <div class="response__info">
-                        <h3 class="response__name">John Smith</h3>
-                        <p class="response__type">
-                            <span>Job type:</span>
-                            <span>seo and smm</span>
-                        </p>
-                        <p class="response__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                            cupiditate dolor ipsa, ipsam iusto laudantium necessitatibus odio optio possimus repellat.
-                            Consequuntur dicta est ipsum, libero non qui sapiente sequi tempora?</p>
-                    </div>
-                </div>
-                <!-- /response-->
-            </div>
-            <!--  /test-slider__item-->
-            <div class="testimonial__slider-item">
-                <div class="response">
-                    <div class="response__badge">
-                        <img src="assets/images/woman.jpg" alt="avatar">
-                    </div>
-                    <div class="response__info">
-                        <h3 class="response__name">Yana Dukhovska</h3>
-                        <p class="response__type">
-                            <span>Job type:</span>
-                            <span>website development</span>
-                        </p>
-                        <p></p>
-                        <p class="response__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
-                            aliquam amet enim explicabo fugiat harum id illo impedit inventore, labore magni omnis
-                            placeat praesentium, quas quia quibusdam quo vitae.</p>
-                    </div>
-                </div>
-                <!-- /response-->
-            </div>
-            <!--  /test-slider__item-->
-        </div>
     </div>
-</section>
-<!--/testimonial-->
-
-<section id="services" class="section services">
-    <div class="container">
-        <header class="section__header">
-            <h2 class="section__title">Services. First version</h2>
-            <h4 class="section__subtitle"><span class="color-blue">Want a unique design</span> or help with advertising?
-                <br> Check out our services.</h4>
-        </header>
-
-        <div class="row">
-            <div class="col-4 col-md-6 col-xs-12">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -153,7 +47,7 @@ title: Main
                         totam velit voluptatem. Asperiores hic quibusdam saepe.</p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
                         <g fill-rule="evenodd" clip-rule="evenodd">
@@ -170,7 +64,7 @@ title: Main
                     </p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" fill="#000000" version="1.1" id="Capa_1"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -199,7 +93,7 @@ title: Main
                     </p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="google-ads">
                         <path stroke="#000"
@@ -213,7 +107,7 @@ title: Main
                     </p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 118.3"
@@ -231,7 +125,7 @@ title: Main
                     </p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 90.55"
@@ -249,7 +143,7 @@ title: Main
                     </p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" fill="#000000" version="1.1" id="Capa_1"
                          xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +180,7 @@ title: Main
                     </p>
                 </article>
             </div>
-            <div class="col-4 col-md-6 col-xs-12">
+            <div class="swiper-slide">
                 <article data-modal="#modalService" class="a-card">
                     <svg class="a-card__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -345,71 +239,9 @@ title: Main
                 </article>
             </div>
         </div>
-        <div class="btn__wrapper">
-            <a class="btn btn--black btn--service" href="./services.html">Our Services</a>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
 <!--/services-->
-
-<section id="who" class="section who">
-    <div class="who__overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-9 col-md-12">
-                <h2>Who we are?!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis. Some text.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis.</p>
-            </div>
-            <div class="col-3 col-md-12">
-                <a href="./about.html" class="btn btn--onblue">About Us</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/who-->
-
-<section id="talk" class="section section--nopading talk">
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-5 col-md-12">
-                <div class="section__header">
-                    <h2>Want to talk to us more?</h2>
-                    <h4 class="section__subtitle">
-                        <span class="color-blue">Write to us</span> we call you.
-                        <span>Lorem ipsum dolor sit amet, consectetur.</span>
-                    </h4>
-                </div>
-            </div>
-            <!--/col-6-->
-            <div class="col-7 col-md-12">
-                <form class="c-form">
-                    <h4 class="c-form__title">Bli Kontaktet</h4>
-                    <div class="c-form__group">
-                        <label class="c-form__label">
-                            <span class="c-form__label-text">Foretakstnavn</span>
-                            <input name="fullname" class="c-form__input" type="text" placeholder="Foretakstnavn">
-                        </label>
-                        <label class="c-form__label">
-                            <span class="c-form__label-text">Ditt Navn</span>
-                            <input name="ditt" class="c-form__input" type="text" placeholder="Ditt Navn">
-                        </label>
-                    </div>
-                    <div class="c-form__group">
-                        <label class="c-form__label">
-                            <span class="c-form__label-text">Telefon</span>
-                            <input class="c-form__input" name="subject" type="tel" placeholder="096 333 33 33">
-                        </label>
-                        <label class="c-form__label">
-                            <span class="c-form__label-text">E-POST</span>
-                            <input class="c-form__input" placeholder="some@emial.com" name="email">
-                        </label>
-                    </div>
-                    <button class="btn btn--cta btn--small btn--plane" type="submit">Bli Kontaktet</button>
-                </form>
-            </div>
-            <!--/col-6-->
-        </div>
-    </div>
-</section>
-<!--/talk-->

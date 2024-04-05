@@ -10,21 +10,21 @@
   transition: all .2s linear;
   @extend .text-overflow;
 
-  @include mobile {
+  @include mobile-large {
     min-width: 230px;
   }
 
   &--cta {
     border: 2px solid $green;
-    color: $black;
+    color: $white;
     background-color: $green;
-    box-shadow: -4px 4px 6px rgba($black, .2);
+    box-shadow: none;
 
     &:hover {
-      color: $black;
-      border-color: $black;
-      background-color: transparent;
-      box-shadow: none;
+      border-color: $blue;
+      background-color: $blue;
+
+      box-shadow: -4px 4px 6px rgba($black, .2);
     }
     &:focus {
       box-shadow: -4px 4px 6px rgba($black, .2);
@@ -32,9 +32,9 @@
   }
 
   &--black {
-    color: $black;
+    color: $white;
     border: 2px solid $black;
-    background-color: transparent;
+    background-color: $black;
 
     &:hover {
       color: $white;

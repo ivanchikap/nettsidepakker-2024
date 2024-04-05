@@ -86,26 +86,21 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 5rem;
 
     &--contact {
       text-align: left;
-      margin-bottom: 0.2rem;
     }
 
     @include tablet {
       font-size: 4rem;
-      margin-bottom: 3rem;
     }
 
     @include mobile-large {
       font-size: 3.2rem;
-      margin-bottom: 2.4rem;
     }
 
     @include mobile {
       font-size: 3rem;
-      margin-bottom: 1rem;
     }
   }
 
