@@ -8,20 +8,10 @@
   box-shadow: -4px 4px 8px -2px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   overflow: hidden;
-  cursor: pointer;
   transition: all .2s linear;
 
   &:hover, &:focus {
     box-shadow: -12px 12px 20px -6px rgba(0, 0, 0, .4);
-    #{$root} {
-      &__img img {
-        transform: scale(1.03);
-        filter: grayscale(0);
-      }
-      &__title a {
-        color: $blue;
-      }
-    }
   }
 
   &__img {
@@ -30,11 +20,15 @@
     width: 100%;
     overflow: hidden;
 
-
     img {
       @extend .img-cover;
       filter: grayscale(60%);
       transition: all .2s linear;
+
+      &:hover {
+        transform: scale(1.03);
+        filter: grayscale(0);
+      }
     }   
   }
 

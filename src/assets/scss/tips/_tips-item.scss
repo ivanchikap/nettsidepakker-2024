@@ -1,0 +1,9 @@
+.tips-item {
+  padding: 40px 0;
+
+  &__top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
