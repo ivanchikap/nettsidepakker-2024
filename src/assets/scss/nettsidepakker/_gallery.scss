@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  gap: 4px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

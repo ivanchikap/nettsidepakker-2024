@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Services
+title: Nettsidepakker
 ---
 <section class="banner banner--alt">
     <div class="banner__info">
@@ -15,7 +15,8 @@ title: Services
         </div>
     </div>
     <!-- /banner__info-->
-    <div class="banner__img" style="background-image:linear-gradient(200deg, rgba(41, 182, 246, 0.8) 0%, rgba(41, 182, 246, 0.3) 100%),  url('assets/images/team.jpg')">
+    <div class="banner__img"
+         style="background-image:linear-gradient(200deg, rgba(41, 182, 246, 0.8) 0%, rgba(41, 182, 246, 0.3) 100%),  url('assets/images/team.jpg')">
     </div>
     <!--/banner__video-->
 </section>
@@ -23,21 +24,43 @@ title: Services
 
 <section class="section">
     <div class="container">
-        <header class="section__header">
-            <h2>I will do carousel with your templates here</h2>
-        </header>
-        <div id="lightgallery">
-            <a href="assets/images/site2.jpg" data-lg-size="1600-2400">
-                <img alt="img1" src="assets/images/site2.jpg" />
+        <p>need to do img with grayscale and description on absolute and not visible. On hover: delete grayscale and span become visible</p>
+        <div id="img1" class="gallery__item-info" style="display: none">
+            <h4>Img title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem blanditiis fugiat id
+                inventore laboriosam maxime qui recusandae sapiente sunt!</p>
+        </div>
+        <div id="img2" class="gallery__item-info" style="display: none">
+            <h4>Img title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta inventore molestiae
+                odit pariatur praesentium quae qui temporibus, ullam. Ut?</p>
+        </div>
+        <div id="img3" class="gallery__item-info" style="display: none">
+            <h4>Img title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum iusto sed? Cupiditate
+                laudantium minima quisquam voluptate. Recusandae, sunt, ut!</p>
+        </div>
+        <div id="img4" class="gallery__item-info" style="display: none">
+            <h4>Img title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae error expedita magni mollitia
+                nisi odio omnis, ratione reiciendis rem.</p>
+        </div>
+        <div id="lightgallery" class="gallery">
+            <a href="assets/images/site2.jpg" data-sub-html="#img1">
+                <span>img title</span>
+                <img alt="img1" src="assets/images/site2-min.jpg"/>
             </a>
-            <a href="assets/images/site1.jpg" data-lg-size="1024-800">
-                <img alt="img2" src="assets/images/site1.jpg" />
+            <a href="assets/images/site1.jpg" data-sub-html="#img2">
+                <span>img title</span>
+                <img alt="img2" src="assets/images/site1-min.jpg"/>
             </a>
-            <a href="assets/images/before.jpg" data-lg-size="1024-800">
-                <img alt="img2" src="assets/images/before.jpg" />
+            <a href="assets/images/before.jpg" data-sub-html="#img3">
+                <span>img title</span>
+                <img alt="img2" src="assets/images/before-min.jpg"/>
             </a>
-            <a href="assets/images/after.jpg" data-lg-size="1024-800">
-                <img alt="img2" src="assets/images/after.jpg" />
+            <a href="assets/images/after.jpg" data-sub-html="#img4">
+                <span>img title</span>
+                <img alt="img2" src="assets/images/after-min.jpg"/>
             </a>
         </div>
     </div>

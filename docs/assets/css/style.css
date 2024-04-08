@@ -8153,7 +8153,6 @@ h4 {
 .link--in::after {
     content: ">";
     display: block;
-    margin-left: 1rem;
 }
 
 .link--out {
@@ -8166,7 +8165,6 @@ h4 {
 .link--out::before {
     content: "<";
     display: block;
-    margin-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -8177,12 +8175,11 @@ h4 {
 
 @media screen and (max-width: 576px) {
     .link--out {
-        margin-bottom: 1.6rem;
         max-width: 100%;
     }
 }
 
-.img-cover, .b-article img, .b-article__avatar img, .article__avatar img, .article__img img, .response__badge img, .shop__right img, .logo img {
+.img-cover, .b-article img.b-article__photo-img, .b-article__avatar img, .article__avatar img, .article__img img, .response__badge img, .shop__right img, .logo img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -10054,6 +10051,22 @@ h4 {
     }
 }
 
+.gallery {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4px;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .article {
     background-color: #fff;
     max-width: 45rem;
@@ -10199,6 +10212,10 @@ h4 {
     margin-top: 3rem;
 }
 
+.b-article .article__about {
+    padding: 1rem 0;
+}
+
 .b-article__title {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -10245,13 +10262,21 @@ h4 {
 }
 
 .b-article__author-name {
+    font-size: 2.4rem;
     max-height: 6rem;
     overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+    .b-article__author-name {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .b-article__author-name {
-        max-height: 4.6rem;
+        font-size: 1.8rem;
+        max-height: 5.6rem;
     }
 }
 
@@ -10301,7 +10326,7 @@ h4 {
 
 .b-article__photo {
     float: right;
-    border: thin #c0c0c0 solid;
+    border: thin #29B6F6 dashed;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column;
@@ -10312,242 +10337,258 @@ h4 {
     margin: 0 0 15px 15px;
 }
 
+@media screen and (max-width: 992px) {
+    .b-article__photo {
+        margin: 0 0 8px 8px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .b-article__photo {
         float: none;
         width: 100%;
-        margin-bottom: 1rem;
+        margin: 1rem 0 1rem 0;
     }
 }
 
+.b-article img.b-article__photo-img {
+    margin-bottom: 0;
+}
+
 .b-article figcaption {
-    background-color: #222;
+    background-color: #29B6F6;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
 }
 
-.b-article h1 {
+.b-article__body h1 {
     font-size: 48px;
 }
 
 @media screen and (max-width: 1440px) {
-    .b-article h1 {
+    .b-article__body h1 {
         font-size: 46px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .b-article h1 {
+    .b-article__body h1 {
         font-size: 44px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .b-article h1 {
+    .b-article__body h1 {
         font-size: 42px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .b-article h1 {
+    .b-article__body h1 {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .b-article h1 {
+    .b-article__body h1 {
         font-size: 36px;
     }
 }
 
-.b-article h2 {
+.b-article__body h2 {
     font-size: 44px;
 }
 
 @media screen and (max-width: 1440px) {
-    .b-article h2 {
+    .b-article__body h2 {
         font-size: 42px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .b-article h2 {
+    .b-article__body h2 {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .b-article h2 {
+    .b-article__body h2 {
         font-size: 38px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .b-article h2 {
+    .b-article__body h2 {
         font-size: 34px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .b-article h2 {
+    .b-article__body h2 {
         font-size: 30px;
     }
 }
 
-.b-article h3 {
+.b-article__body h3 {
     font-size: 40px;
 }
 
 @media screen and (max-width: 1440px) {
-    .b-article h3 {
+    .b-article__body h3 {
         font-size: 38px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .b-article h3 {
+    .b-article__body h3 {
         font-size: 36px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .b-article h3 {
+    .b-article__body h3 {
         font-size: 34px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .b-article h3 {
+    .b-article__body h3 {
         font-size: 32px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .b-article h3 {
+    .b-article__body h3 {
         font-size: 28px;
     }
 }
 
-.b-article h4 {
+.b-article__body h4 {
     font-size: 36px;
 }
 
 @media screen and (max-width: 1440px) {
-    .b-article h4 {
+    .b-article__body h4 {
         font-size: 34px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .b-article h4 {
+    .b-article__body h4 {
         font-size: 32px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .b-article h4 {
+    .b-article__body h4 {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .b-article h4 {
+    .b-article__body h4 {
         font-size: 28px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .b-article h4 {
+    .b-article__body h4 {
         font-size: 24px;
     }
 }
 
-.b-article h5 {
+.b-article__body h5 {
     font-size: 32px;
 }
 
 @media screen and (max-width: 1440px) {
-    .b-article h5 {
+    .b-article__body h5 {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .b-article h5 {
+    .b-article__body h5 {
         font-size: 28px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .b-article h5 {
+    .b-article__body h5 {
         font-size: 26px;
     }
 }
 
-.b-article h6 {
+.b-article__body h6 {
     font-size: 28px;
 }
 
 @media screen and (max-width: 1440px) {
-    .b-article h6 {
+    .b-article__body h6 {
         font-size: 26px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .b-article h6 {
+    .b-article__body h6 {
         font-size: 24px;
     }
 }
 
-.b-article p {
+.b-article__body p {
     font-size: 18px;
     line-height: 1.4;
 }
 
-.b-article h1, .b-article h2, .b-article h3, .b-article h4, .b-article h5, .b-article h6, .b-article p, .b-article ul, .b-article ol, .b-article dl, .b-article img {
+.b-article__body h1, .b-article__body h2, .b-article__body h3, .b-article__body h4, .b-article__body h5, .b-article__body h6, .b-article__body p, .b-article__body ul, .b-article__body ol, .b-article__body dl, .b-article__body img {
     margin-bottom: 20px;
 }
 
-.b-article a {
+.b-article__body a {
     color: #29B6F6;
 }
 
-.b-article a:hover {
+.b-article__body a:hover {
     text-decoration: underline;
 }
 
-.b-article ul {
+.b-article__body ul {
     list-style: "- ";
     font-size: 20px;
     margin-left: 10px;
 }
 
 @media screen and (max-width: 576px) {
-    .b-article ul {
+    .b-article__body ul {
         font-size: 18px;
     }
 }
 
-.b-article ol {
+.b-article__body ol {
     list-style: decimal inside;
     font-size: 20px;
 }
 
 @media screen and (max-width: 576px) {
-    .b-article ol {
+    .b-article__body ol {
         font-size: 18px;
     }
 }
 
-.b-article li {
+.b-article__body li {
     margin-bottom: 10px;
 }
 
 .tips-item {
     padding: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .tips-item .btn {
+        min-width: 170px;
+    }
 }
 
 .tips-item__top-header {

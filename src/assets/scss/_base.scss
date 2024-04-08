@@ -139,7 +139,6 @@ h4 {
     &::after {
       content: '>';
       display: block;
-      margin-left: 1rem;
     }
   }
 
@@ -151,7 +150,6 @@ h4 {
     &::before {
       content: '<';
       display: block;
-      margin-right: 1rem;
 
       @include mobile-large {
         margin-right: .5rem;
@@ -159,7 +157,6 @@ h4 {
     }
 
     @include mobile {
-      margin-bottom: 1.6rem;
       max-width: 100%;
     }
   }

@@ -1,6 +1,10 @@
 .b-article {
   margin-top: 3rem;
 
+  .article__about {
+    padding: 1rem 0;
+  }
+
   &__title {
     font-family: $poppins;
     font-weight: 700;
@@ -37,11 +41,16 @@
   }
 
   &__author-name {
+    font-size: 2.4rem;
     max-height: 6rem;
     overflow: hidden;
 
+    @include mobile-large {
+      font-size: 2rem;
+    }
     @include mobile {
-      max-height: 4.6rem;
+      font-size: 1.8rem;
+      max-height: 5.6rem;
     }
   }
 
@@ -88,7 +97,7 @@
 
   &__photo {
     float: right;
-    border: thin #c0c0c0 solid;
+    border: thin $blue dashed;
     display: flex;
     flex-flow: column;
     padding: 5px;
@@ -96,166 +105,173 @@
     height: auto;
     margin: 0 0 15px 15px;
 
+    @include tablet {
+      margin: 0 0 8px 8px;
+    }
+
     @include mobile {
       float: none;
       width: 100%;
-      margin-bottom: 1rem;
+      margin: 1rem 0 1rem 0;
     }
   }
 
-  img {
+  img.b-article__photo-img {
+    margin-bottom: 0;
     @extend .img-cover;
   }
 
   figcaption {
-    background-color: #222;
+    background-color: $blue;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
   }
 
-  h1 {
-    font-size: 48px;
+  &__body {
+    h1 {
+      font-size: 48px;
 
-    @include widescreen {
-      font-size: 46px;
+      @include widescreen {
+        font-size: 46px;
+      }
+      @include laptop {
+        font-size: 44px;
+      }
+      @include tablet {
+        font-size: 42px;
+      }
+      @include mobile-large {
+        font-size: 40px;
+      }
+      @include mobile {
+        font-size: 36px;
+      }
     }
-    @include laptop {
+
+    h2 {
       font-size: 44px;
+
+      @include widescreen {
+        font-size: 42px;
+      }
+      @include laptop {
+        font-size: 40px;
+      }
+      @include tablet {
+        font-size: 38px;
+      }
+      @include mobile-large {
+        font-size: 34px;
+      }
+      @include mobile {
+        font-size: 30px;
+      }
     }
-    @include tablet {
-      font-size: 42px;
-    }
-    @include mobile-large {
+
+    h3 {
       font-size: 40px;
+
+      @include widescreen {
+        font-size: 38px;
+      }
+      @include laptop {
+        font-size: 36px;
+      }
+      @include tablet {
+        font-size: 34px;
+      }
+      @include mobile-large {
+        font-size: 32px;
+      }
+      @include mobile {
+        font-size: 28px;
+      }
     }
-    @include mobile {
+
+    h4 {
       font-size: 36px;
-    }
-  }
 
-  h2 {
-    font-size: 44px;
+      @include widescreen {
+        font-size: 34px;
+      }
+      @include laptop {
+        font-size: 32px;
+      }
+      @include tablet {
+        font-size: 30px;
+      }
+      @include mobile-large {
+        font-size: 28px;
+      }
+      @include mobile {
+        font-size: 24px;
+      }
+    }
 
-    @include widescreen {
-      font-size: 42px;
-    }
-    @include laptop {
-      font-size: 40px;
-    }
-    @include tablet {
-      font-size: 38px;
-    }
-    @include mobile-large {
-      font-size: 34px;
-    }
-    @include mobile {
-      font-size: 30px;
-    }
-  }
-
-  h3 {
-    font-size: 40px;
-
-    @include widescreen {
-      font-size: 38px;
-    }
-    @include laptop {
-      font-size: 36px;
-    }
-    @include tablet {
-      font-size: 34px;
-    }
-    @include mobile-large {
+    h5 {
       font-size: 32px;
+
+      @include widescreen {
+        font-size: 30px;
+      }
+      @include laptop {
+        font-size: 28px;
+      }
+      @include tablet {
+        font-size: 26px;
+      }
     }
-    @include mobile {
+
+    h6 {
       font-size: 28px;
-    }
-  }
 
-  h4 {
-    font-size: 36px;
+      @include widescreen {
+        font-size: 26px;
+      }
+      @include laptop {
+        font-size: 24px;
+      }
+    }
 
-    @include widescreen {
-      font-size: 34px;
-    }
-    @include laptop {
-      font-size: 32px;
-    }
-    @include tablet {
-      font-size: 30px;
-    }
-    @include mobile-large {
-      font-size: 28px;
-    }
-    @include mobile {
-      font-size: 24px;
-    }
-  }
-
-  h5 {
-    font-size: 32px;
-
-    @include widescreen {
-      font-size: 30px;
-    }
-    @include laptop {
-      font-size: 28px;
-    }
-    @include tablet {
-      font-size: 26px;
-    }
-  }
-
-  h6 {
-    font-size: 28px;
-
-    @include widescreen {
-      font-size: 26px;
-    }
-    @include laptop {
-      font-size: 24px;
-    }
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  h1, h2, h3, h4, h5, h6, p, ul, ol, dl, img {
-    margin-bottom: 20px;
-  }
-  
-  a {
-    color: $blue;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  ul {
-    list-style: '- ';
-    font-size: 20px;
-    margin-left: 10px;
-
-    @include mobile {
+    p {
       font-size: 18px;
+      line-height: 1.4;
     }
-  }
 
-  ol {
-    list-style: decimal inside;
-    font-size: 20px;
-
-    @include mobile {
-      font-size: 18px;
+    h1, h2, h3, h4, h5, h6, p, ul, ol, dl, img {
+      margin-bottom: 20px;
     }
-  }
 
-  li {
-    margin-bottom: 10px;
+    a {
+      color: $blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      list-style: '- ';
+      font-size: 20px;
+      margin-left: 10px;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    ol {
+      list-style: decimal inside;
+      font-size: 20px;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
