@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const modalContent = neededModal.querySelector('.modal__content')
                 || neededModal.querySelector('.shop')
-                || neededModal.querySelector('.modal-work');
+                || neededModal.querySelector('.modal-work')
+                || neededModal.querySelector('.modal__body');
 
             modalContent.addEventListener('click', (e) => {
                 e.stopPropagation();

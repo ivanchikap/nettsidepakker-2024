@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
         slideShadows: true,
     },
     autoplay: {
-        delay: 5000
+        delay: 3000
     },
     pagination: {
         el: ".swiper-pagination",
@@ -24,19 +24,19 @@ var swiper = new Swiper(".mySwiper", {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 20
+            spaceBetween: 30
         },
         768: {
             slidesPerView: 2,
-            spaceBetween: 30
+            spaceBetween: 20
         },
         1200: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 20
         },
         1440: {
-            slidesPerView: 4,
-            spaceBetween: 40
+            slidesPerView: 3,
+            spaceBetween: 30
         }
     }
 });

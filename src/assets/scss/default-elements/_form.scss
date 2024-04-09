@@ -2,7 +2,7 @@
 
   &__control {
     & + & {
-      margin-top: 2.7rem;
+      margin-top: 2rem;
 
       @include tablet {
         margin-top: 2rem;
@@ -10,6 +10,23 @@
 
       @include mobile-large {
         margin-top: 1.6rem;
+      }
+    }
+
+    &--checkbox {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .form__label {
+        user-select: none;
+        margin: 0;
+        padding-right: 6px;
+      }
+
+      @include mobile-large {
+        justify-content: flex-start;
+        margin-left: 26px;
       }
     }
   }
@@ -47,6 +64,12 @@
 
     &--textarea {
       min-height: 12rem;
+    }
+
+    &--checkbox {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
     }
   }
 
