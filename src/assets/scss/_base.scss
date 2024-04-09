@@ -101,6 +101,11 @@ h4 {
 }
 .link {
   transition: color .2s linear;
+
+  &--footer {
+    color: $blue;
+  }
+
   &:hover {
     color: $blue;
   }
