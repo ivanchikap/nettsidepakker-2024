@@ -209,9 +209,31 @@
     </section>
     <!--/banner-->
     
-    <section class="section">
-        <div class="container">
-            <p>need to do img with grayscale and description on absolute and not visible. On hover: delete grayscale and span become visible</p>
+    <section class="section gallery-section">
+        <div id="lightgallery" class="gallery justified-gallery">
+            <a class="gallery__item" href="assets/images/site2.jpg" data-sub-html="#img1">
+                <span class="gallery__item-desc">Ashlee</span>
+                <img class="gallery__img" alt="img1" src="assets/images/site2-min.jpg"/>
+            </a>
+            <a class="gallery__item" href="assets/images/site1.jpg" data-sub-html="#img2">
+                <span class="gallery__item-desc">Market experience</span>
+                <img class="gallery__img" alt="img2" src="assets/images/site1-min.jpg"/>
+            </a>
+            <a class="gallery__item" href="assets/images/before.jpg" data-sub-html="#img3">
+                <span class="gallery__item-desc">User Testing</span>
+                <img class="gallery__img" alt="img2" src="assets/images/before-min.jpg"/>
+            </a>
+            <a class="gallery__item" href="assets/images/after.jpg" data-sub-html="#img4">
+                <span class="gallery__item-desc">User Testing2</span>
+                <img class="gallery__img" alt="img2" src="assets/images/after-min.jpg"/>
+            </a>
+            <a class="gallery__item" href="assets/images/site1.jpg" data-sub-html="#img5">
+                <span class="gallery__item-desc">Market experience</span>
+                <img class="gallery__img" alt="img2" src="assets/images/site1-min.jpg"/>
+            </a>
+        </div>
+        <!--/gallery-->
+        <div class="gallery-section__img-desc">
             <div id="img1" class="gallery__item-info" style="display: none">
                 <h4>Img title</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem blanditiis fugiat id
@@ -232,25 +254,14 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae error expedita magni mollitia
                     nisi odio omnis, ratione reiciendis rem.</p>
             </div>
-            <div id="lightgallery" class="gallery">
-                <a href="assets/images/site2.jpg" data-sub-html="#img1">
-                    <span>img title</span>
-                    <img alt="img1" src="assets/images/site2-min.jpg"/>
-                </a>
-                <a href="assets/images/site1.jpg" data-sub-html="#img2">
-                    <span>img title</span>
-                    <img alt="img2" src="assets/images/site1-min.jpg"/>
-                </a>
-                <a href="assets/images/before.jpg" data-sub-html="#img3">
-                    <span>img title</span>
-                    <img alt="img2" src="assets/images/before-min.jpg"/>
-                </a>
-                <a href="assets/images/after.jpg" data-sub-html="#img4">
-                    <span>img title</span>
-                    <img alt="img2" src="assets/images/after-min.jpg"/>
-                </a>
+            <div id="img5" class="gallery__item-info" style="display: none">
+                <h4>Img title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae error expedita magni mollitia
+                    nisi odio omnis, ratione reiciendis rem.</p>
             </div>
         </div>
+        <!--/gallery-section__img-desc-->
+    
     </section>
     
 </main>
