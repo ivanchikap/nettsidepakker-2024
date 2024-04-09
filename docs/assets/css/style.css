@@ -8108,6 +8108,10 @@ h4 {
     transition: color 0.2s linear;
 }
 
+.link--footer {
+    color: #29B6F6;
+}
+
 .link:hover {
     color: #29B6F6;
 }
@@ -8421,7 +8425,6 @@ h4 {
 }
 
 .sidebar {
-    width: 250px;
     height: auto;
     padding: 2rem;
     position: fixed;
@@ -8509,6 +8512,11 @@ h4 {
     width: 100%;
     font-weight: 500;
     color: #eee;
+}
+
+.nav--sidebar .nav__item:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 992px) {

@@ -23,6 +23,11 @@
       font-weight: 500;
       color: #eee;
 
+      &:hover {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+      }
+
       @include tablet {
         font-size: 30px;
         padding: 14px;
