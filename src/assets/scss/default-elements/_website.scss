@@ -1,9 +1,5 @@
 .website {
   background-color: #fff;
-
-  .row {
-    align-items: center;
-  }
   
   h2 {
     text-align: left;
@@ -13,12 +9,11 @@
     }
     @include laptop {
       font-size: 34px;
+
+    }
+    @include tablet {
       text-align: center;
     }
-  }
-
-  .col-6:first-child {
-    padding: 0;
   }
 
   &__info {
@@ -32,19 +27,42 @@
     }
   }
 
+  .col-6:first-child {
+    min-height: 400px;
+
+    @include mobile-large {
+      min-height: 320px;
+    }
+
+    @include mobile {
+      min-height: 280px;
+    }
+  }
+
   &__actions {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
     margin-top: 30px;
 
-    @include laptop {
+    @include tablet {
       justify-content: center;
     }
   }
+
   .btn {
     @include mobile {
       min-width: 220px;
     }
+  }
+
+  .twentytwenty-wrapper, .twentytwenty-container {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .twentytwenty-container img {
+    max-width: none;
+    @extend .img-cover;
   }
 }

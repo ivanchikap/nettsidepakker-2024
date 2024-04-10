@@ -4,47 +4,49 @@ title: Main
 ---
 
 <section class="banner">
-    <div class="banner__info">
-        <h1><span>Hello, </span>some slogan! </h1>
-        <div class="banner__info-text">
-            <h3>Our best proposal</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
-                expedita natus nisi soluta veritatis voluptatibus. Dignissimos dolorem dolores et eum perspiciatis
-                provident rerum vel veritatis.</p>
+    <div class="container">
+        <div class="banner__info">
+            <h1><span>Hello, </span>some slogan! </h1>
+            <div class="banner__info-text">
+                <h3>Our best proposal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
+                    expedita natus nisi soluta veritatis voluptatibus. Dignissimos dolorem dolores et eum perspiciatis
+                    provident rerum vel veritatis.</p>
+            </div>
+            <div class="btn__wrapper btn__wrapper--left">
+                <a class="btn btn--cta btn--email btn-anchor-js" href="#who">Mail Us</a>
+            </div>
         </div>
-        <div class="btn__wrapper btn__wrapper--left">
-            <a class="btn btn--cta btn--email btn-anchor-js" href="#who">Mail Us</a>
+        <!-- /banner__info-->
+        <div class="banner__video">
+            <video
+                    id="my-video"
+                    class="video-js vjs-theme-forest banner__video-player"
+                    controls
+                    muted
+                    preload="auto"
+                    poster="assets/images/pic1.jpg"
+                    data-setup="{}"
+            >
+                <source src="assets/images/nature.mp4" type="video/mp4"/>
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                    >
+                </p>
+            </video>
         </div>
+        <!--/banner__video-->
     </div>
-    <!-- /banner__info-->
-    <div class="banner__video">
-        <video
-                id="my-video"
-                class="video-js vjs-theme-forest banner__video-player"
-                controls
-                muted
-                preload="auto"
-                poster="assets/images/pic1.jpg"
-                data-setup="{}"
-        >
-            <source src="assets/images/nature.mp4" type="video/mp4"/>
-            <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank"
-                >supports HTML5 video</a
-                >
-            </p>
-        </video>
-    </div>
-    <!--/banner__video-->
 </section>
 <!--/banner-->
 
 <section id="website" class="section section--nopading website">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-6 col-md-12 order-md-0">
+            <div class="col-6 col-md-12 order-md-1">
                 <div id="website-slider">
                     <!-- The before image is first -->
                     <img class="website__img" src="assets/images/before.jpg">
@@ -54,13 +56,13 @@ title: Main
                 <!--  /website__info-->
             </div>
             <!-- /col-6-->
-            <div class="col-6 col-md-12 order-md-1">
+            <div class="col-6 col-md-12 order-md-0">
                 <div class="website__info">
                     <h2>Website development</h2>
                     <p>Get a unique website with us from a low monthly price by using our templates with everything
                         included. Go to templates to see prices. </p>
                     <div class="website__actions">
-                        <a class="btn btn--cta btn--shop" href="#">Shop website</a>
+                        <a class="btn btn--cta btn--shop"  data-modal="#modalShopping" href="#">Shop website</a>
                     </div>
                 </div>
             </div>
