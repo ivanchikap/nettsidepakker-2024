@@ -289,6 +289,12 @@
       margin-bottom: 20px;
     }
 
+    img:last-child {
+      display: block;
+      margin-bottom: 0;
+      @extend .img-cover;
+    }
+
     a {
       color: $blue;
 
