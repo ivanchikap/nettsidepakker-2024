@@ -3,14 +3,12 @@
   padding: 2rem;
   position: fixed;
   right: 0;
-  top: 120px;
+  top: 66px;
   z-index: 10;
   background-color: rgba(0, 0, 0, .7);
   transform: translateX(101%);
   transition: transform .3s linear;
-  @include mobile-large {
-    top: 100px;
-  }
+
   @include mobile {
     top: 86px;
   }

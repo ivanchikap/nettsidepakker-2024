@@ -3,17 +3,27 @@
   max-width: 280px;
   padding: 10px 0;
 
-  @include mobile-large {
-    max-width: 220px;
-  }
-
   @include mobile {
-    padding: 4px 0;
-    max-width: 210px;
+    max-width: 60px;
+    padding: 0;
   }
 
   img {
     display: block;
     @extend .img-cover;
+
+    &:first-child {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      display: none;
+
+      @include mobile {
+        display: inline-block;
+      }
+    }
   }
 }

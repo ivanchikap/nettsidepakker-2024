@@ -8351,8 +8351,8 @@ h4 {
 
 .burger {
     display: none;
-    width: 4rem;
-    height: 3rem;
+    width: 3.4rem;
+    height: 2.6rem;
     padding: 0;
     font-size: 0;
     color: transparent;
@@ -8368,7 +8368,7 @@ h4 {
 .burger::before, .burger::after, .burger span {
     display: block;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #fff;
     position: absolute;
     left: 0;
@@ -8429,7 +8429,7 @@ h4 {
     padding: 2rem;
     position: fixed;
     right: 0;
-    top: 120px;
+    top: 66px;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.7);
     -webkit-transform: translateX(101%);
@@ -8437,12 +8437,6 @@ h4 {
     transition: -webkit-transform 0.3s linear;
     transition: transform 0.3s linear;
     transition: transform 0.3s linear, -webkit-transform 0.3s linear;
-}
-
-@media screen and (max-width: 768px) {
-    .sidebar {
-        top: 100px;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -8463,21 +8457,31 @@ h4 {
     padding: 10px 0;
 }
 
-@media screen and (max-width: 768px) {
-    .logo {
-        max-width: 220px;
-    }
-}
-
 @media screen and (max-width: 576px) {
     .logo {
-        padding: 4px 0;
-        max-width: 210px;
+        max-width: 60px;
+        padding: 0;
     }
 }
 
 .logo img {
     display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .logo img:first-child {
+        display: none;
+    }
+}
+
+.logo img:last-child {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .logo img:last-child {
+        display: inline-block;
+    }
 }
 
 .nav {
@@ -8510,7 +8514,6 @@ h4 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-    font-weight: 500;
     color: #eee;
 }
 
@@ -8543,9 +8546,9 @@ h4 {
 .nav__item {
     cursor: pointer;
     position: relative;
-    font-size: 24px;
+    font-size: 21px;
     text-shadow: -1px 1px 2px rgba(33, 33, 33, 0.7);
-    font-weight: 500;
+    font-weight: 400;
     padding: 8px;
     transition: color 0.2s linear;
     text-transform: capitalize;
@@ -10167,12 +10170,12 @@ h4 {
     padding: 30px 15px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 12px 12px 0 0;
 }
 
 @media screen and (max-width: 992px) {
     .c-form {
         text-align: center;
-        border-radius: 12px 12px 0 0;
     }
 }
 
@@ -10290,18 +10293,12 @@ h4 {
 }
 
 .header {
-    padding-top: 119px;
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        padding-top: 100px;
-    }
+    padding-top: 66px;
 }
 
 @media screen and (max-width: 576px) {
     .header {
-        padding-top: 75px;
+        padding-top: 56px;
     }
 }
 
@@ -10359,7 +10356,7 @@ h4 {
 }
 
 .header__shopping i {
-    font-size: 26px;
+    font-size: 21px;
     text-shadow: -1px 1px 2px rgba(33, 33, 33, 0.7);
     color: #fff;
     cursor: pointer;
@@ -10368,7 +10365,7 @@ h4 {
 
 @media screen and (max-width: 992px) {
     .header__shopping i {
-        font-size: 30px;
+        font-size: 26px;
     }
 }
 
@@ -10459,6 +10456,7 @@ h4 {
     bottom: 0;
     left: 50%;
     z-index: 2;
+    border-radius: 0 0 12px 12px;
     -webkit-transform: translate3d(-50%, 101%, 0);
     transform: translate3d(-50%, 101%, 0);
     transition: -webkit-transform 0.2s ease-in;
@@ -10491,6 +10489,7 @@ h4 {
 }
 
 .gallery__img {
+    border-radius: 12px;
     -webkit-filter: grayscale(80%);
     filter: grayscale(80%);
     transition: -webkit-filter 0.2s linear;
@@ -10537,6 +10536,7 @@ h4 {
     bottom: 0;
     left: 50%;
     z-index: 2;
+    border-radius: 0 0 12px 12px;
     -webkit-transform: translate3d(-50%, 101%, 0);
     transform: translate3d(-50%, 101%, 0);
     transition: -webkit-transform 0.2s ease-in-out;
@@ -10569,6 +10569,7 @@ h4 {
 }
 
 .pr-card__img {
+    border-radius: 12px;
     -webkit-filter: grayscale(80%);
     filter: grayscale(80%);
     transition: -webkit-filter 0.2s linear;

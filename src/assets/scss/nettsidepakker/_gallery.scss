@@ -47,6 +47,7 @@
     bottom: 0;
     left: 50%;
     z-index: 2;
+    border-radius: 0 0 12px 12px;
     transform: translate3d(-50%, 101%, 0);
     transition: transform .2s ease-in;
 
@@ -68,6 +69,7 @@
   }
 
   &__img {
+    border-radius: 12px;
     filter: grayscale(80%);
     @extend .img-cover;
     transition: filter .2s linear;
