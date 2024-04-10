@@ -8439,12 +8439,6 @@ h4 {
     transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
-@media screen and (max-width: 576px) {
-    .sidebar {
-        top: 86px;
-    }
-}
-
 .show-sidebar .sidebar {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -8524,7 +8518,6 @@ h4 {
 
 @media screen and (max-width: 992px) {
     .nav--sidebar .nav__item {
-        font-size: 30px;
         padding: 14px;
     }
 }

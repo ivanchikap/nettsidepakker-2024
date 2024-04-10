@@ -9,10 +9,6 @@
   transform: translateX(101%);
   transition: transform .3s linear;
 
-  @include mobile {
-    top: 86px;
-  }
-
   .show-sidebar & {
     transform: translateX(0);
   }
