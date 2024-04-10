@@ -36,6 +36,8 @@
 
     @include mobile {
       min-height: 280px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
