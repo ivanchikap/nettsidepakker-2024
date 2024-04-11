@@ -10159,17 +10159,25 @@ h4 {
 
 .c-form {
     position: relative;
-    margin: -20px auto -20px 0auto;
+    z-index: 3;
+    margin: -30px auto -30px auto;
     background-color: #8dd8fa;
-    height: 119%;
+    height: 118%;
     padding: 30px 15px;
     border-radius: 12px;
-    box-shadow: -4px 4px 8px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: -6px 6px 4px -2px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 992px) {
     .c-form {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .c-form {
+        margin: -20px auto -20px auto;
+        height: 110%;
     }
 }
 
@@ -10224,6 +10232,10 @@ h4 {
     width: 100%;
 }
 
+.talk {
+    background-color: #fff;
+}
+
 .talk .col-5 {
     display: -ms-flexbox;
     display: flex;
@@ -10243,7 +10255,6 @@ h4 {
 @media screen and (max-width: 992px) {
     .talk .section__header {
         text-align: center;
-        margin-bottom: 0;
     }
 }
 
@@ -11139,7 +11150,7 @@ h4 {
 
 @media screen and (max-width: 576px) {
     .footer__main {
-        padding: 30px 0;
+        padding: 60px 0 30px 0;
     }
 }
 
