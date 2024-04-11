@@ -1,4 +1,5 @@
 .talk {
+  background-color: #fff;
   .col-5 {
     display: flex;
     align-items: center;
@@ -12,7 +13,7 @@
     
     @include tablet {
       text-align: center;
-      margin-bottom: 0;
+      //margin-bottom: 0;
     }
   }
   .section__subtitle {
