@@ -40,3 +40,20 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
+
+var swiper1 = new Swiper(".testimonial__slider", {
+    direction: "horizontal",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+    },
+    autoplay: {
+        delay: 4000
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});

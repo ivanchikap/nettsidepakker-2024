@@ -1,8 +1,22 @@
-.swiper {
-  padding: 0 30px 80px 30px;
+.swiper.mySwiper {
+  padding: 30px 30px 30px 30px;
 
-  @include mobile {
-    padding: 0 15px 60px 15px;
+  @include tablet {
+    padding: 0;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 50px;
+
+    @include mobile {
+      padding-bottom: 35px;
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    @include tablet {
+      display: none;
+    }
   }
 }
 
@@ -10,9 +24,11 @@
   color: rgba($blue, .5);
   transition: color .2s linear;
 
-  @include mobile {
+  @include mobile-large {
     display: none;
   }
+
+
 
   &:hover {
     color: $blue;
