@@ -121,6 +121,11 @@
     font-weight: 900;
   }
 
+  &--cart::before {
+    content: "\f07a";
+    font-weight: 900;
+  }
+
   &--plane::before {
     content: "\f1d8";
     font-weight: 400;
